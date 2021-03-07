@@ -1,0 +1,16 @@
+C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Service\bin\Debug\netcoreapp3.1\Moviesite.Service.deps.json
+C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Service\bin\Debug\netcoreapp3.1\Moviesite.Service.dll
+C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Service\bin\Debug\netcoreapp3.1\Moviesite.Service.pdb
+C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Service\obj\Debug\netcoreapp3.1\Moviesite.Service.AssemblyInfoInputs.cache
+C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Service\obj\Debug\netcoreapp3.1\Moviesite.Service.AssemblyInfo.cs
+C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Service\obj\Debug\netcoreapp3.1\Moviesite.Service.csproj.CoreCompileInputs.cache
+C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Service\obj\Debug\netcoreapp3.1\Moviesite.Service.dll
+C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Service\obj\Debug\netcoreapp3.1\Moviesite.Service.pdb
+C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Service\obj\Debug\netcoreapp3.1\Moviesite.Service.csprojAssemblyReference.cache
+C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Service\bin\Debug\netcoreapp3.1\Moviestore.Repository.dll
+C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Service\bin\Debug\netcoreapp3.1\Moviestore.Repository.pdb
+C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Service\obj\Debug\netcoreapp3.1\Moviesite.Service.csproj.CopyComplete
+C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Service\bin\Debug\netcoreapp3.1\Moviesite.Data.dll
+C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Service\bin\Debug\netcoreapp3.1\Moviesite.Entities.dll
+C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Service\bin\Debug\netcoreapp3.1\Moviesite.Data.pdb
+C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Service\bin\Debug\netcoreapp3.1\Moviesite.Entities.pdb
