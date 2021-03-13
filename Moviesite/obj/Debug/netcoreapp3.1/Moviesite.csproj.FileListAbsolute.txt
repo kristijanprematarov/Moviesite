@@ -213,9 +213,10 @@ C:\Users\Kristijan\source\repos\Moviesite\Moviesite\obj\Debug\netcoreapp3.1\Razo
 C:\Users\Kristijan\source\repos\Moviesite\Moviesite\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Delete.cshtml.g.cs
 C:\Users\Kristijan\source\repos\Moviesite\Moviesite\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Details.cshtml.g.cs
 C:\Users\Kristijan\source\repos\Moviesite\Moviesite\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Edit.cshtml.g.cs
-C:\Users\Kristijan\source\repos\Moviesite\Moviesite\obj\Debug\netcoreapp3.1\Razor\Views\Category\Index.cshtml.g.cs
 C:\Users\Kristijan\source\repos\Moviesite\Moviesite\obj\Debug\netcoreapp3.1\Razor\Views\Order\Index.cshtml.g.cs
 C:\Users\Kristijan\source\repos\Moviesite\Moviesite\obj\Debug\netcoreapp3.1\Razor\Views\Producer\Index.cshtml.g.cs
 C:\Users\Kristijan\source\repos\Moviesite\Moviesite\obj\Debug\netcoreapp3.1\Razor\Views\ShoppingCart\Index.cshtml.g.cs
 C:\Users\Kristijan\source\repos\Moviesite\Moviesite\obj\Debug\netcoreapp3.1\Razor\Views\Wishlist\Index.cshtml.g.cs
 C:\Users\Kristijan\source\repos\Moviesite\Moviesite\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\Kristijan\source\repos\Moviesite\Moviesite\bin\Debug\netcoreapp3.1\libman.json
+C:\Users\Kristijan\source\repos\Moviesite\Moviesite\obj\Debug\netcoreapp3.1\Razor\Views\Genre\Index.cshtml.g.cs

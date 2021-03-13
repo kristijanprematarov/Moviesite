@@ -1,12 +1,11 @@
-﻿using Moviesite.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace Bookstore.Entities
+namespace Moviesite.Entities
 {
-    public class Category
+    public class Genre
     {
         [Key]
         public int Id { get; set; }
@@ -14,6 +13,6 @@ namespace Bookstore.Entities
         [StringLength(100)]
         public string Name { get; set; }
 
-        public virtual ICollection<Movie> Movies { get; set; } 
+        public virtual ICollection<Movie> Movies { get; set; }
     }
 }

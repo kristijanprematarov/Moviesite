@@ -11,6 +11,8 @@ namespace Moviestore.Repository.Interfaces
 
         void EditMovie(Movie movie);
 
+        void EditMovie(int id);
+
         void DeleteMovie(int id);
 
         Movie GetMovieById(int id);

@@ -18,19 +18,23 @@ namespace Moviesite.Entities
         public string ProducerName { get; set; }
         public int ProducerID { get; set; }
         public Producer Producer { get; set; }
-        public DateTime YearFilmed { get; set; }
+
+        public string DirectorName { get; set; }
+        public int DirectorID { get; set; }
+        public Director Director { get; set; }
+
+        //public ICollection<MovieActor> MovieActors { get; set; }
+
+        public DateTime ReleaseDate { get; set; }
         public string Duration { get; set; }
 
         public int UserId { get; set; }
 
         [StringLength(150)]
-        public string Genre { get; set; }
+        public string GenreName { get; set; }
 
-        public int CategoryID { get; set; }
-        public Category Category { get; set; }
-
-        [StringLength(150)]
-        public string CategoryName { get; set; }
+        public int GenreID { get; set; }
+        public Genre Genre { get; set; }
 
         public double Price { get; set; }
 

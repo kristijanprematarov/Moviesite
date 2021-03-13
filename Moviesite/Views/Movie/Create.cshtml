@@ -1,4 +1,5 @@
-﻿@model Moviesite.Entities.Movie
+﻿
+@model Moviesite.Entities.Movie
 
 <div class="container">
     <h1 class="text-center">CREATE MOVIE</h1>
@@ -21,41 +22,53 @@
         <div class="form-row">
             <div class="form-group col-md-12">
                 <label asp-for="ProducerID">ProducerID</label>
-                <select asp-for="ProducerID" class="form-control" asp-items="ViewBag.ProducerID"></select>
+                <select asp-for="ProducerID" class="form-control" asp-items="ViewBag.ProducerList"></select>
             </div>
         </div>
 
         <div class="form-row">
             <div class="form-group col-md-6">
-                <label asp-for="Category">Category</label>
-                <input asp-for="Category" class="form-control">
+                <label asp-for="DirectorName">DirectorName</label>
+                <input asp-for="DirectorName" class="form-control">
             </div>
             <div class="form-group col-md-6">
-                <label asp-for="CategoryID">CategoryID</label>
-                @*<select asp-for="CategoryID" class="form-control" asp-items="ViewBag.CategoryList"></select>*@
-
-                @Html.DropDownListFor(x => x.CategoryID, new SelectList(ViewBag.CategoryList, "Value", "Text"),
-                    htmlAttributes: new { @class = "form-control", id = "CategoryID" })
-
+                <label asp-for="DirectorID">DirectorID</label>
+                <select asp-for="DirectorID" class="form-control" asp-items="ViewBag.DirectorList"></select>
             </div>
         </div>
 
         <div class="form-row">
-            <div class="form-group col-md-3">
+            <div class="form-group col-md-6">
+                <label asp-for="ReleaseDate">ReleaseDate</label>
+                <input asp-for="ReleaseDate" class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="Duration">Duration</label>
+                <input asp-for="Duration" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="GenreName">GenreName</label>
+                <input asp-for="GenreName" class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="GenreID">GenreID</label>
+                <select asp-for="GenreID" class="form-control" asp-items="ViewBag.GenreList"></select>
+                @*@Html.DropDownListFor(x => x.GenreID, new SelectList(ViewBag.GenreList,"Value","Text"),
+                htmlAttributes: new { @class="form-control", id="GenreID" })*@
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
                 <label asp-for="Price">Price</label>
                 <input asp-for="Price" class="form-control">
             </div>
-            <div class="form-group col-md-3">
-                    <label asp-for="FormatType">FormatType</label>
-                    <input asp-for="FormatType" class="form-control">
-            </div>
-            <div class="form-group col-md-3">
-                <label asp-for="Genre">Genre</label>
-                <input asp-for="Genre" class="form-control">
-            </div>
-            <div class="form-group col-md-3">
-                <label asp-for="Duration">Duration</label>
-                <input asp-for="Duration" class="form-control">
+            <div class="form-group col-md-6">
+                <label asp-for="FormatType">FormatType</label>
+                <input asp-for="FormatType" class="form-control">
             </div>
         </div>
 
@@ -116,3 +129,4 @@
         <a asp-action="Index">Back to list</a>
     </div>
 </div>
+

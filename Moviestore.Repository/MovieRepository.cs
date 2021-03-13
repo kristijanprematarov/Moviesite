@@ -36,6 +36,13 @@ namespace Moviestore.Repository
             _context.SaveChanges();
         }
 
+        public void EditMovie(int id)
+        {
+            Movie movie = GetMovieById(id);
+            _context.Movies.Update(movie);
+            _context.SaveChanges();
+        }
+
         public IEnumerable<Movie> GetAllMovies()
         {
             var allMovies = _context.Movies.AsEnumerable();

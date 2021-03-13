@@ -42,7 +42,7 @@ namespace Moviesite
             //REPOSITORIES
             services.AddTransient<IMovieRepository, MovieRepository>();
             services.AddTransient<IProducerRepository, ProducerRepository>();
-            services.AddTransient<ICategoryRepository, CategoryRepository>();
+            services.AddTransient<IGenreRepository, GenreRepository>();
             services.AddTransient<IOrderRepository, OrderRepository>();
             services.AddTransient<IWishlistRepository, WishlistRepository>();
             services.AddTransient<IShoppingCartRepository, ShoppingCartRepository>();
@@ -50,7 +50,7 @@ namespace Moviesite
             //SERVICES
             services.AddTransient<IMovieService, MovieService>();
             services.AddTransient<IProducerService, ProducerService>();
-            services.AddTransient<ICategoryService, CategoryService>();
+            services.AddTransient<IGenreService, GenreService>();
             services.AddTransient<IOrderService, OrderService>();
             services.AddTransient<IWishlistService, WishlistService>();
             services.AddTransient<IShoppingCartService, ShoppingCartService>();
