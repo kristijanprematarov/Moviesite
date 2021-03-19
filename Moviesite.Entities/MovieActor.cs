@@ -7,7 +7,7 @@ namespace Moviesite.Entities
     public class MovieActor
     {
         public int MovieID { get; set; }
-        
+
         public Movie Movie { get; set; }
 
         public int ActorID { get; set; }

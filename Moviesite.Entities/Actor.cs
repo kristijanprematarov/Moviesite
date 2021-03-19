@@ -21,6 +21,6 @@ namespace Moviesite.Entities
         [StringLength(50)]
         public string Gender { get; set; }
 
-        //public ICollection<MovieActor> MovieActors { get; set; }
+        public ICollection<MovieActor> MovieActors { get; set; }
     }
 }

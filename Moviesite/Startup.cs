@@ -46,6 +46,10 @@ namespace Moviesite
             services.AddTransient<IOrderRepository, OrderRepository>();
             services.AddTransient<IWishlistRepository, WishlistRepository>();
             services.AddTransient<IShoppingCartRepository, ShoppingCartRepository>();
+            services.AddTransient<IShoppingCartRepository, ShoppingCartRepository>();
+            services.AddTransient<IShoppingCartRepository, ShoppingCartRepository>();
+            services.AddTransient<IDirectorRepository, DirectorRepository>();
+            services.AddTransient<IActorRepository, ActorRepository>();
 
             //SERVICES
             services.AddTransient<IMovieService, MovieService>();
@@ -54,6 +58,8 @@ namespace Moviesite
             services.AddTransient<IOrderService, OrderService>();
             services.AddTransient<IWishlistService, WishlistService>();
             services.AddTransient<IShoppingCartService, ShoppingCartService>();
+            services.AddTransient<IDirectorService, DirectorService>();
+            services.AddTransient<IActorService, ActorService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

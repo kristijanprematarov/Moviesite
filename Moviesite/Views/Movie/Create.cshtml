@@ -1,5 +1,5 @@
 ﻿
-@model Moviesite.Entities.Movie
+@model Moviesite.ViewModels.MovieActorViewModel
 
 <div class="container">
     <h1 class="text-center">CREATE MOVIE</h1>
@@ -10,112 +10,119 @@
 
         <div class="form-row">
             <div class="form-group col-md-6">
-                <label asp-for="Title">Title</label>
-                <input asp-for="Title" class="form-control">
+                <label asp-for="Movie.Title"></label>
+                <input asp-for="Movie.Title" class="form-control">
             </div>
             <div class="form-group col-md-6">
-                <label asp-for="ProducerName">ProducerName</label>
-                <input asp-for="ProducerName" type="text" class="form-control">
+                <label asp-for="Movie.ProducerName"></label>
+                <input asp-for="Movie.ProducerName" type="text" class="form-control">
             </div>
         </div>
 
         <div class="form-row">
             <div class="form-group col-md-12">
-                <label asp-for="ProducerID">ProducerID</label>
-                <select asp-for="ProducerID" class="form-control" asp-items="ViewBag.ProducerList"></select>
+                <label asp-for="Movie.ProducerID"></label>
+                <select asp-for="Movie.ProducerID" class="form-control" asp-items="ViewBag.ProducerList"></select>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label asp-for="Actors"></label>
+                <select asp-for="Actors" multiple="multiple" class="form-control" asp-items="ViewBag.ActorList"></select>
             </div>
         </div>
 
         <div class="form-row">
             <div class="form-group col-md-6">
-                <label asp-for="DirectorName">DirectorName</label>
-                <input asp-for="DirectorName" class="form-control">
+                <label asp-for="Movie.DirectorName"></label>
+                <input asp-for="Movie.DirectorName" class="form-control">
             </div>
             <div class="form-group col-md-6">
-                <label asp-for="DirectorID">DirectorID</label>
-                <select asp-for="DirectorID" class="form-control" asp-items="ViewBag.DirectorList"></select>
-            </div>
-        </div>
-
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label asp-for="ReleaseDate">ReleaseDate</label>
-                <input asp-for="ReleaseDate" class="form-control">
-            </div>
-            <div class="form-group col-md-6">
-                <label asp-for="Duration">Duration</label>
-                <input asp-for="Duration" class="form-control">
+                <label asp-for="Movie.DirectorID"></label>
+                <select asp-for="Movie.DirectorID" class="form-control" asp-items="ViewBag.DirectorList"></select>
             </div>
         </div>
 
         <div class="form-row">
             <div class="form-group col-md-6">
-                <label asp-for="GenreName">GenreName</label>
-                <input asp-for="GenreName" class="form-control">
+                <label asp-for="Movie.ReleaseDate"></label>
+                <input asp-for="Movie.ReleaseDate" class="form-control">
             </div>
             <div class="form-group col-md-6">
-                <label asp-for="GenreID">GenreID</label>
-                <select asp-for="GenreID" class="form-control" asp-items="ViewBag.GenreList"></select>
+                <label asp-for="Movie.Duration"></label>
+                <input asp-for="Movie.Duration" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="Movie.GenreName"></label>
+                <input asp-for="Movie.GenreName" class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="Movie.GenreID"></label>
+                <select asp-for="Movie.GenreID" class="form-control" asp-items="ViewBag.GenreList"></select>
                 @*@Html.DropDownListFor(x => x.GenreID, new SelectList(ViewBag.GenreList,"Value","Text"),
-                htmlAttributes: new { @class="form-control", id="GenreID" })*@
+                    htmlAttributes: new { @class="form-control", id="GenreID" })*@
             </div>
         </div>
 
         <div class="form-row">
             <div class="form-group col-md-6">
-                <label asp-for="Price">Price</label>
-                <input asp-for="Price" class="form-control">
+                <label asp-for="Movie.Price"></label>
+                <input asp-for="Movie.Price" class="form-control">
             </div>
             <div class="form-group col-md-6">
-                <label asp-for="FormatType">FormatType</label>
-                <input asp-for="FormatType" class="form-control">
-            </div>
-        </div>
-
-        <div class="form-row">
-            <div class="form-group col-md-12">
-                <label asp-for="Description">Description</label>
-                <input asp-for="Description" class="form-control">
-            </div>
-        </div>
-
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label asp-for="Language">Language</label>
-                <input asp-for="Language" class="form-control">
-            </div>
-            <div class="form-group col-md-6">
-                <label asp-for="Country">Country</label>
-                <input asp-for="Country" class="form-control">
-            </div>
-        </div>
-
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label asp-for="Shipping">Shipping</label>
-                <input asp-for="Shipping" class="form-control">
-            </div>
-            <div class="form-group col-md-6">
-                <label asp-for="SoldItems">SoldItems</label>
-                <input asp-for="SoldItems" class="form-control">
+                <label asp-for="Movie.FormatType"></label>
+                <input asp-for="Movie.FormatType" class="form-control">
             </div>
         </div>
 
         <div class="form-row">
             <div class="form-group col-md-12">
-                <label asp-for="PhotoURL">PhotoURL</label>
-                <input asp-for="PhotoURL" class="form-control">
+                <label asp-for="Movie.Description"></label>
+                <input asp-for="Movie.Description" class="form-control">
             </div>
         </div>
 
         <div class="form-row">
             <div class="form-group col-md-6">
-                <label asp-for="Rating">Rating</label>
-                <input asp-for="Rating" class="form-control">
+                <label asp-for="Movie.Language"></label>
+                <input asp-for="Movie.Language" class="form-control">
             </div>
             <div class="form-group col-md-6">
-                <label asp-for="DateAdded">DateAdded</label>
-                <input asp-for="DateAdded" class="form-control">
+                <label asp-for="Movie.Country"></label>
+                <input asp-for="Movie.Country" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="Movie.Shipping"></label>
+                <input asp-for="Movie.Shipping" class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="Movie.SoldItems"></label>
+                <input asp-for="Movie.SoldItems" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label asp-for="Movie.PhotoURL"></label>
+                <input asp-for="Movie.PhotoURL" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="Movie.Rating"></label>
+                <input asp-for="Movie.Rating" class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="Movie.DateAdded"></label>
+                <input asp-for="Movie.DateAdded" class="form-control">
             </div>
         </div>
 

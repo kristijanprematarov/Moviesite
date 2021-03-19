@@ -23,6 +23,7 @@
                 <th>Title</th>
                 <th>Producer</th>
                 <th>Director</th>
+                <th>Actors</th>
                 <th>Release Date</th>
                 <th>Genre</th>
                 <th>Actions</th>
@@ -32,40 +33,43 @@
         <tbody>
             @foreach (var movie in Model)
             {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => movie.Title)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => movie.ProducerName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => movie.DirectorName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => movie.ReleaseDate)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => movie.GenreName)
-                </td>
-                <td>
-                    <a class="btn-secondary btn btn-block" asp-controller="Movie" asp-action="Edit" asp-route-id="@movie.Id">
-                        <i class="fas fa-edit"></i>
-                        &nbsp; &nbsp;
-                        Edit
-                    </a>
-                    <a class="btn-info btn btn-block" asp-controller="Movie" asp-action="Details" asp-route-id="@movie.Id">
-                        <i class="fas fa-info"></i>
-                        &nbsp; &nbsp;
-                        Details
-                    </a>
-                    <a class="btn-danger btn btn-block" asp-controller="Movie" asp-action="Delete" asp-route-id="@movie.Id">
-                        <i class="fas fa-trash"></i>
-                        &nbsp; &nbsp;
-                        Delete
-                    </a>
-                </td>
-            </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => movie.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => movie.ProducerName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => movie.DirectorName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => movie.MovieActors)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => movie.ReleaseDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => movie.GenreName)
+                    </td>
+                    <td>
+                        <a class="btn-secondary btn btn-block" asp-controller="Movie" asp-action="Edit" asp-route-id="@movie.Id">
+                            <i class="fas fa-edit"></i>
+                            &nbsp; &nbsp;
+                            Edit
+                        </a>
+                        <a class="btn-info btn btn-block" asp-controller="Movie" asp-action="Details" asp-route-id="@movie.Id">
+                            <i class="fas fa-info"></i>
+                            &nbsp; &nbsp;
+                            Details
+                        </a>
+                        <a class="btn-danger btn btn-block" asp-controller="Movie" asp-action="Delete" asp-route-id="@movie.Id">
+                            <i class="fas fa-trash"></i>
+                            &nbsp; &nbsp;
+                            Delete
+                        </a>
+                    </td>
+                </tr>
             }
         </tbody>
 

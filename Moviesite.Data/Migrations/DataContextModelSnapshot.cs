@@ -318,6 +318,33 @@ namespace Moviesite.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("Moviesite.Entities.Actor", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Country")
+                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(100);
+
+                    b.Property<DateTime>("DateBirth")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Gender")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(100);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Actors");
+                });
+
             modelBuilder.Entity("Moviesite.Entities.Director", b =>
                 {
                     b.Property<int>("Id")
@@ -454,6 +481,21 @@ namespace Moviesite.Data.Migrations
                     b.ToTable("Movies");
                 });
 
+            modelBuilder.Entity("Moviesite.Entities.MovieActor", b =>
+                {
+                    b.Property<int>("MovieID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ActorID")
+                        .HasColumnType("int");
+
+                    b.HasKey("MovieID", "ActorID");
+
+                    b.HasIndex("ActorID");
+
+                    b.ToTable("MovieActors");
+                });
+
             modelBuilder.Entity("Moviesite.Entities.Producer", b =>
                 {
                     b.Property<int>("Id")
@@ -557,6 +599,21 @@ namespace Moviesite.Data.Migrations
                     b.HasOne("Moviesite.Entities.Producer", "Producer")
                         .WithMany("Movies")
                         .HasForeignKey("ProducerID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Moviesite.Entities.MovieActor", b =>
+                {
+                    b.HasOne("Moviesite.Entities.Actor", "Actor")
+                        .WithMany("MovieActors")
+                        .HasForeignKey("ActorID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Moviesite.Entities.Movie", "Movie")
+                        .WithMany("MovieActors")
+                        .HasForeignKey("MovieID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

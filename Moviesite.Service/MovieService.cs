@@ -1,4 +1,5 @@
-﻿using Moviesite.Entities;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using Moviesite.Entities;
 using Moviesite.Service.Interfaces;
 using Moviestore.Repository.Interfaces;
 using System;
@@ -26,6 +27,11 @@ namespace Moviesite.Service
             _movieRepository.DeleteMovie(id);
         }
 
+        public void Delete(Movie movie)
+        {
+            _movieRepository.DeleteMovie(movie);
+        }
+
         public void Edit(Movie movie)
         {
             _movieRepository.EditMovie(movie);
@@ -48,5 +54,96 @@ namespace Moviesite.Service
             var result = _movieRepository.GetMovieById(id);
             return result;
         }
+
+        #region Helper Functions
+
+        public (List<SelectListItem> Genres, List<SelectListItem> Producers, List<SelectListItem> Directors, List<SelectListItem> Actors)
+            FillDropdowns(IEnumerable<Genre> genres, IEnumerable<Producer> producers, IEnumerable<Director> directors, IEnumerable<Actor> actors)
+        {
+
+            List<SelectListItem> Genres = new List<SelectListItem>()
+            {
+                new SelectListItem { Value = "0", Text= "Select genre...",Selected=true}
+            };
+
+            List<SelectListItem> Producers = new List<SelectListItem>()
+            {
+                new SelectListItem { Value = "0", Text= "Select producer...",Selected=true}
+            };
+
+            List<SelectListItem> Directors = new List<SelectListItem>()
+            {
+                new SelectListItem { Value = "0", Text= "Select director...",Selected=true}
+            };
+
+            List<SelectListItem> Actors = new List<SelectListItem>()
+            {
+                new SelectListItem { Value = "0", Text= "Select actors...",Selected=true}
+            };
+
+            foreach (var genre in genres)
+            {
+                Genres.Add(new SelectListItem { Value = genre.Id.ToString(), Text = genre.Name });
+            }
+
+            foreach (var producer in producers)
+            {
+                Producers.Add(new SelectListItem { Value = producer.Id.ToString(), Text = producer.Name });
+            }
+
+            foreach (var director in directors)
+            {
+                Directors.Add(new SelectListItem { Value = director.Id.ToString(), Text = director.Name });
+            }
+
+            foreach (var actor in actors)
+            {
+                Actors.Add(new SelectListItem { Value = actor.Id.ToString(), Text = actor.Name });
+            }
+
+
+            #region OldStaticWay
+
+            //List<SelectListItem> Genres = new List<SelectListItem>()
+            //{
+            //    new SelectListItem() { Text="Adventure", Value="1"},
+            //    new SelectListItem() { Text="Action", Value="2"},
+            //    new SelectListItem() { Text="Sci-Fi", Value="3"},
+            //    new SelectListItem() { Text="Comedy", Value="4"},
+            //};
+
+            //List<SelectListItem> Producers = new List<SelectListItem>()
+            //{
+            //    new SelectListItem() { Text="Steven Spielberg", Value="1"},
+            //    new SelectListItem() { Text="Frank Marshall", Value="2"},
+            //    new SelectListItem() { Text="Kevin Feige", Value="3"},
+            //    new SelectListItem() { Text="George Lucas", Value="4"},
+            //};
+
+            //List<SelectListItem> Directors = new List<SelectListItem>()
+            //{
+            //    new SelectListItem() { Text="Joss Whedon", Value="1"},
+            //    new SelectListItem() { Text="Christopher Nolan", Value="2"},
+            //    new SelectListItem() { Text="Michael Bay", Value="3"},
+            //};
+
+            //List<SelectListItem> Actors = new List<SelectListItem>()
+            //{
+            //    new SelectListItem() { Text="Christian Bale", Value="1"},
+            //    new SelectListItem() { Text="Chris Hemsworth", Value="2"},
+            //};
+
+            #endregion
+
+            return (Genres, Producers, Directors, Actors);
+        }
+
+
+
+        #endregion
+
+
+
+
     }
 }

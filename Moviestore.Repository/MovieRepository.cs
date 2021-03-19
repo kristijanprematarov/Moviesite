@@ -30,6 +30,12 @@ namespace Moviestore.Repository
             _context.SaveChanges();
         }
 
+        public void DeleteMovie(Movie movie)
+        {
+            _context.Movies.Remove(movie);
+            _context.SaveChanges();
+        }
+
         public void EditMovie(Movie movie)
         {
             _context.Movies.Update(movie);
