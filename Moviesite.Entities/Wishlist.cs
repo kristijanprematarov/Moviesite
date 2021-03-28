@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace Bookstore.Entities
+namespace Moviesite.Entities
 {
     public class Wishlist
     {
