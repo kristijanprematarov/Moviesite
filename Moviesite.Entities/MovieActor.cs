@@ -13,7 +13,5 @@ namespace Moviesite.Entities
         public int ActorID { get; set; }
 
         public Actor Actor { get; set; }
-
-
     }
 }
