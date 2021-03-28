@@ -46,8 +46,6 @@ namespace Moviesite
             services.AddTransient<IOrderRepository, OrderRepository>();
             services.AddTransient<IWishlistRepository, WishlistRepository>();
             services.AddTransient<IShoppingCartRepository, ShoppingCartRepository>();
-            services.AddTransient<IShoppingCartRepository, ShoppingCartRepository>();
-            services.AddTransient<IShoppingCartRepository, ShoppingCartRepository>();
             services.AddTransient<IDirectorRepository, DirectorRepository>();
             services.AddTransient<IActorRepository, ActorRepository>();
 
