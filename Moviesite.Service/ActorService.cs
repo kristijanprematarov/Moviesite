@@ -3,6 +3,7 @@ using Moviesite.Service.Interfaces;
 using Moviestore.Repository.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Moviesite.Service
@@ -40,6 +41,23 @@ namespace Moviesite.Service
         {
             var result = _actorRepository.GetAllActors();
             return result;
+        }
+
+        public string GetAllActorNames(int[] actorIds)
+        {
+            string actorNames = "";
+
+            if (actorIds.Length > 0)
+            {
+                foreach (var actorId in actorIds)
+                {
+                    var lastItem = actorIds.Last();
+                    var getActor = _actorRepository.GetActorById(actorId);
+                    actorNames += actorId.Equals(lastItem) ? getActor.Name : getActor.Name + ", ";
+                }
+            }
+
+            return actorNames;
         }
     }
 }

@@ -1,19 +1,17 @@
-﻿using Moviesite.Data;
-using Moviesite.Entities;
-using Moviestore.Repository.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Moviestore.Repository
+﻿namespace Moviestore.Repository
 {
+    using Moviesite.Data;
+    using Moviesite.Entities;
+    using Moviestore.Repository.Interfaces;
+    using System.Collections.Generic;
+
     public class MovieActorRepository : IMovieActorRepository
     {
         private readonly DataContext _context;
 
         public MovieActorRepository(DataContext context)
         {
-            this._context = context;
+            _context = context;
         }
 
         public void AddMovieActors(Actor actor, Movie movie)
@@ -21,7 +19,12 @@ namespace Moviestore.Repository
             var movieActor = new MovieActor { MovieID = movie.Id, ActorID = actor.Id };
             _context.MovieActors.Add(movieActor);
             _context.SaveChanges();
+        }
 
+        public void AddMovieActorsList(List<MovieActor> movieActors)
+        {
+            _context.MovieActors.AddRange(movieActors);
+            _context.SaveChanges();
         }
 
         public void DeleteMovieActors(MovieActor movieActor)

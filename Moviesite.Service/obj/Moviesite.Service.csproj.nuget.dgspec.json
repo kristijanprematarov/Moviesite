@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kristijan\\source\\repos\\Moviesite\\Moviesite.Service\\Moviesite.Service.csproj": {}
+    "C:\\Users\\jorgos.lambrinidis.BTOBET\\Desktop\\WORK\\Code Academy\\08_PROJECTS\\GROUP 2\\Student Git Account Projects\\Moviesite\\Moviesite.Service\\Moviesite.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kristijan\\source\\repos\\Moviesite\\Moviesite.Data\\Moviesite.Data.csproj": {
+    "C:\\Users\\jorgos.lambrinidis.BTOBET\\Desktop\\WORK\\Code Academy\\08_PROJECTS\\GROUP 2\\Student Git Account Projects\\Moviesite\\Moviesite.Data\\Moviesite.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kristijan\\source\\repos\\Moviesite\\Moviesite.Data\\Moviesite.Data.csproj",
+        "projectUniqueName": "C:\\Users\\jorgos.lambrinidis.BTOBET\\Desktop\\WORK\\Code Academy\\08_PROJECTS\\GROUP 2\\Student Git Account Projects\\Moviesite\\Moviesite.Data\\Moviesite.Data.csproj",
         "projectName": "Moviesite.Data",
-        "projectPath": "C:\\Users\\Kristijan\\source\\repos\\Moviesite\\Moviesite.Data\\Moviesite.Data.csproj",
-        "packagesPath": "C:\\Users\\Kristijan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kristijan\\source\\repos\\Moviesite\\Moviesite.Data\\obj\\",
+        "projectPath": "C:\\Users\\jorgos.lambrinidis.BTOBET\\Desktop\\WORK\\Code Academy\\08_PROJECTS\\GROUP 2\\Student Git Account Projects\\Moviesite\\Moviesite.Data\\Moviesite.Data.csproj",
+        "packagesPath": "C:\\Users\\jorgos.lambrinidis.BTOBET\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jorgos.lambrinidis.BTOBET\\Desktop\\WORK\\Code Academy\\08_PROJECTS\\GROUP 2\\Student Git Account Projects\\Moviesite\\Moviesite.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Kristijan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jorgos.lambrinidis.BTOBET\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +34,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Kristijan\\source\\repos\\Moviesite\\Moviesite.Entities\\Moviesite.Entities.csproj": {
-                "projectPath": "C:\\Users\\Kristijan\\source\\repos\\Moviesite\\Moviesite.Entities\\Moviesite.Entities.csproj"
+              "C:\\Users\\jorgos.lambrinidis.BTOBET\\Desktop\\WORK\\Code Academy\\08_PROJECTS\\GROUP 2\\Student Git Account Projects\\Moviesite\\Moviesite.Entities\\Moviesite.Entities.csproj": {
+                "projectPath": "C:\\Users\\jorgos.lambrinidis.BTOBET\\Desktop\\WORK\\Code Academy\\08_PROJECTS\\GROUP 2\\Student Git Account Projects\\Moviesite\\Moviesite.Entities\\Moviesite.Entities.csproj"
               }
             }
           }
@@ -76,24 +78,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Kristijan\\source\\repos\\Moviesite\\Moviesite.Entities\\Moviesite.Entities.csproj": {
+    "C:\\Users\\jorgos.lambrinidis.BTOBET\\Desktop\\WORK\\Code Academy\\08_PROJECTS\\GROUP 2\\Student Git Account Projects\\Moviesite\\Moviesite.Entities\\Moviesite.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kristijan\\source\\repos\\Moviesite\\Moviesite.Entities\\Moviesite.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\jorgos.lambrinidis.BTOBET\\Desktop\\WORK\\Code Academy\\08_PROJECTS\\GROUP 2\\Student Git Account Projects\\Moviesite\\Moviesite.Entities\\Moviesite.Entities.csproj",
         "projectName": "Moviesite.Entities",
-        "projectPath": "C:\\Users\\Kristijan\\source\\repos\\Moviesite\\Moviesite.Entities\\Moviesite.Entities.csproj",
-        "packagesPath": "C:\\Users\\Kristijan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kristijan\\source\\repos\\Moviesite\\Moviesite.Entities\\obj\\",
+        "projectPath": "C:\\Users\\jorgos.lambrinidis.BTOBET\\Desktop\\WORK\\Code Academy\\08_PROJECTS\\GROUP 2\\Student Git Account Projects\\Moviesite\\Moviesite.Entities\\Moviesite.Entities.csproj",
+        "packagesPath": "C:\\Users\\jorgos.lambrinidis.BTOBET\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jorgos.lambrinidis.BTOBET\\Desktop\\WORK\\Code Academy\\08_PROJECTS\\GROUP 2\\Student Git Account Projects\\Moviesite\\Moviesite.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Kristijan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jorgos.lambrinidis.BTOBET\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -134,24 +138,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Kristijan\\source\\repos\\Moviesite\\Moviesite.Service\\Moviesite.Service.csproj": {
+    "C:\\Users\\jorgos.lambrinidis.BTOBET\\Desktop\\WORK\\Code Academy\\08_PROJECTS\\GROUP 2\\Student Git Account Projects\\Moviesite\\Moviesite.Service\\Moviesite.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kristijan\\source\\repos\\Moviesite\\Moviesite.Service\\Moviesite.Service.csproj",
+        "projectUniqueName": "C:\\Users\\jorgos.lambrinidis.BTOBET\\Desktop\\WORK\\Code Academy\\08_PROJECTS\\GROUP 2\\Student Git Account Projects\\Moviesite\\Moviesite.Service\\Moviesite.Service.csproj",
         "projectName": "Moviesite.Service",
-        "projectPath": "C:\\Users\\Kristijan\\source\\repos\\Moviesite\\Moviesite.Service\\Moviesite.Service.csproj",
-        "packagesPath": "C:\\Users\\Kristijan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kristijan\\source\\repos\\Moviesite\\Moviesite.Service\\obj\\",
+        "projectPath": "C:\\Users\\jorgos.lambrinidis.BTOBET\\Desktop\\WORK\\Code Academy\\08_PROJECTS\\GROUP 2\\Student Git Account Projects\\Moviesite\\Moviesite.Service\\Moviesite.Service.csproj",
+        "packagesPath": "C:\\Users\\jorgos.lambrinidis.BTOBET\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jorgos.lambrinidis.BTOBET\\Desktop\\WORK\\Code Academy\\08_PROJECTS\\GROUP 2\\Student Git Account Projects\\Moviesite\\Moviesite.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Kristijan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jorgos.lambrinidis.BTOBET\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -166,8 +172,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Kristijan\\source\\repos\\Moviesite\\Moviestore.Repository\\Moviestore.Repository.csproj": {
-                "projectPath": "C:\\Users\\Kristijan\\source\\repos\\Moviesite\\Moviestore.Repository\\Moviestore.Repository.csproj"
+              "C:\\Users\\jorgos.lambrinidis.BTOBET\\Desktop\\WORK\\Code Academy\\08_PROJECTS\\GROUP 2\\Student Git Account Projects\\Moviesite\\Moviestore.Repository\\Moviestore.Repository.csproj": {
+                "projectPath": "C:\\Users\\jorgos.lambrinidis.BTOBET\\Desktop\\WORK\\Code Academy\\08_PROJECTS\\GROUP 2\\Student Git Account Projects\\Moviesite\\Moviestore.Repository\\Moviestore.Repository.csproj"
               }
             }
           }
@@ -202,24 +208,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Kristijan\\source\\repos\\Moviesite\\Moviestore.Repository\\Moviestore.Repository.csproj": {
+    "C:\\Users\\jorgos.lambrinidis.BTOBET\\Desktop\\WORK\\Code Academy\\08_PROJECTS\\GROUP 2\\Student Git Account Projects\\Moviesite\\Moviestore.Repository\\Moviestore.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kristijan\\source\\repos\\Moviesite\\Moviestore.Repository\\Moviestore.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\jorgos.lambrinidis.BTOBET\\Desktop\\WORK\\Code Academy\\08_PROJECTS\\GROUP 2\\Student Git Account Projects\\Moviesite\\Moviestore.Repository\\Moviestore.Repository.csproj",
         "projectName": "Moviestore.Repository",
-        "projectPath": "C:\\Users\\Kristijan\\source\\repos\\Moviesite\\Moviestore.Repository\\Moviestore.Repository.csproj",
-        "packagesPath": "C:\\Users\\Kristijan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kristijan\\source\\repos\\Moviesite\\Moviestore.Repository\\obj\\",
+        "projectPath": "C:\\Users\\jorgos.lambrinidis.BTOBET\\Desktop\\WORK\\Code Academy\\08_PROJECTS\\GROUP 2\\Student Git Account Projects\\Moviesite\\Moviestore.Repository\\Moviestore.Repository.csproj",
+        "packagesPath": "C:\\Users\\jorgos.lambrinidis.BTOBET\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jorgos.lambrinidis.BTOBET\\Desktop\\WORK\\Code Academy\\08_PROJECTS\\GROUP 2\\Student Git Account Projects\\Moviesite\\Moviestore.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Kristijan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jorgos.lambrinidis.BTOBET\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -234,8 +242,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Kristijan\\source\\repos\\Moviesite\\Moviesite.Data\\Moviesite.Data.csproj": {
-                "projectPath": "C:\\Users\\Kristijan\\source\\repos\\Moviesite\\Moviesite.Data\\Moviesite.Data.csproj"
+              "C:\\Users\\jorgos.lambrinidis.BTOBET\\Desktop\\WORK\\Code Academy\\08_PROJECTS\\GROUP 2\\Student Git Account Projects\\Moviesite\\Moviesite.Data\\Moviesite.Data.csproj": {
+                "projectPath": "C:\\Users\\jorgos.lambrinidis.BTOBET\\Desktop\\WORK\\Code Academy\\08_PROJECTS\\GROUP 2\\Student Git Account Projects\\Moviesite\\Moviesite.Data\\Moviesite.Data.csproj"
               }
             }
           }
@@ -264,7 +272,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

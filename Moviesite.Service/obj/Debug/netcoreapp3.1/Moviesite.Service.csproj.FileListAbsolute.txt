@@ -14,3 +14,19 @@ C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Service\bin\Debug\netcoreapp
 C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Service\bin\Debug\netcoreapp3.1\Moviesite.Entities.dll
 C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Service\bin\Debug\netcoreapp3.1\Moviesite.Data.pdb
 C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Service\bin\Debug\netcoreapp3.1\Moviesite.Entities.pdb
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Service\bin\Debug\netcoreapp3.1\Moviesite.Service.deps.json
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Service\bin\Debug\netcoreapp3.1\Moviesite.Service.dll
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Service\bin\Debug\netcoreapp3.1\Moviesite.Service.pdb
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Service\bin\Debug\netcoreapp3.1\Moviesite.Data.dll
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Service\bin\Debug\netcoreapp3.1\Moviesite.Entities.dll
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Service\bin\Debug\netcoreapp3.1\Moviestore.Repository.dll
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Service\bin\Debug\netcoreapp3.1\Moviestore.Repository.pdb
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Service\bin\Debug\netcoreapp3.1\Moviesite.Data.pdb
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Service\bin\Debug\netcoreapp3.1\Moviesite.Entities.pdb
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Service\obj\Debug\netcoreapp3.1\Moviesite.Service.csprojAssemblyReference.cache
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Service\obj\Debug\netcoreapp3.1\Moviesite.Service.AssemblyInfoInputs.cache
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Service\obj\Debug\netcoreapp3.1\Moviesite.Service.AssemblyInfo.cs
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Service\obj\Debug\netcoreapp3.1\Moviesite.Service.csproj.CoreCompileInputs.cache
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Service\obj\Debug\netcoreapp3.1\Moviesite.Service.csproj.CopyComplete
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Service\obj\Debug\netcoreapp3.1\Moviesite.Service.dll
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Service\obj\Debug\netcoreapp3.1\Moviesite.Service.pdb

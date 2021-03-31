@@ -1,5 +1,70 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model IEnumerable<Moviesite.Entities.Actor>
+
+<div class="container">
+    <div class="row">
+        <div class="row mt-4">
+            <div class="col-12 col-md-12">
+                <a class="btn-success btn btn-block" asp-controller="Actor" asp-action="Create">
+                    <i class="fas fa-plus-circle"></i>
+                    &nbsp; &nbsp;
+                    Create
+                </a>
+            </div>
+        </div>
+
+        <div class="col-12">
+
+            <table class="table table-bordered">
+
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Name</th>
+                        <th>Country</th>
+                        <th>DateBirth</th>
+                        <th>Gender</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @foreach (var actor in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => actor.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => actor.Country)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => actor.DateBirth)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => actor.Gender)
+                            </td>
+                            <td>
+                                <a class="btn-secondary btn btn-block" asp-controller="Movie" asp-action="Edit" asp-route-id="@actor.Id">
+                                    <i class="fas fa-edit"></i>
+                                    &nbsp; &nbsp;
+                                    Edit
+                                </a>
+                                <a class="btn-info btn btn-block" asp-controller="Movie" asp-action="Details" asp-route-id="@actor.Id">
+                                    <i class="fas fa-info"></i>
+                                    &nbsp; &nbsp;
+                                    Details
+                                </a>
+                                <a class="btn-danger btn btn-block" asp-controller="Movie" asp-action="Delete" asp-route-id="@actor.Id">
+                                    <i class="fas fa-trash"></i>
+                                    &nbsp; &nbsp;
+                                    Delete
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>
+</div>

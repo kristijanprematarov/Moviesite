@@ -57,7 +57,7 @@ namespace Moviesite.Service
 
         #region Helper Functions
 
-        public (List<SelectListItem> Genres, List<SelectListItem> Producers, List<SelectListItem> Directors, List<SelectListItem> Actors)
+        public (List<SelectListItem> Genres, List<SelectListItem> Producers, List<SelectListItem> Directors, MultiSelectList Actors)
             FillDropdowns(IEnumerable<Genre> genres, IEnumerable<Producer> producers, IEnumerable<Director> directors, IEnumerable<Actor> actors)
         {
 
@@ -76,10 +76,7 @@ namespace Moviesite.Service
                 new SelectListItem { Value = "0", Text= "Select director...",Selected=true}
             };
 
-            List<SelectListItem> Actors = new List<SelectListItem>()
-            {
-                new SelectListItem { Value = "0", Text= "Select actors...",Selected=true}
-            };
+            MultiSelectList Actors = new MultiSelectList(actors, "Id", "Name");
 
             foreach (var genre in genres)
             {
@@ -94,11 +91,6 @@ namespace Moviesite.Service
             foreach (var director in directors)
             {
                 Directors.Add(new SelectListItem { Value = director.Id.ToString(), Text = director.Name });
-            }
-
-            foreach (var actor in actors)
-            {
-                Actors.Add(new SelectListItem { Value = actor.Id.ToString(), Text = actor.Name });
             }
 
 
@@ -137,8 +129,6 @@ namespace Moviesite.Service
 
             return (Genres, Producers, Directors, Actors);
         }
-
-
 
         #endregion
 

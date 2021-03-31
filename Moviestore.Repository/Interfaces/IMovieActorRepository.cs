@@ -1,15 +1,14 @@
-﻿using Moviesite.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Moviestore.Repository.Interfaces
+﻿namespace Moviestore.Repository.Interfaces
 {
+    using Moviesite.Entities;
+    using System.Collections.Generic;
+
     public interface IMovieActorRepository
     {
         void AddMovieActors(Actor actor, Movie movie);
 
-        void DeleteMovieActors(MovieActor movieActor);
+        void AddMovieActorsList(List<MovieActor> movieActors);
 
+        void DeleteMovieActors(MovieActor movieActor);
     }
 }

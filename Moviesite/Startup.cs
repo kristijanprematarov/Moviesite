@@ -1,24 +1,18 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Moviesite.Data;
-using Moviesite.Service;
-using Moviesite.Service.Interfaces;
-using Moviestore.Repository;
-using Moviestore.Repository.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Moviesite
 {
+    using Microsoft.AspNetCore.Builder;
+    using Microsoft.AspNetCore.Hosting;
+    using Microsoft.AspNetCore.Identity;
+    using Microsoft.EntityFrameworkCore;
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.Extensions.DependencyInjection;
+    using Microsoft.Extensions.Hosting;
+    using Moviesite.Data;
+    using Moviesite.Service;
+    using Moviesite.Service.Interfaces;
+    using Moviestore.Repository;
+    using Moviestore.Repository.Interfaces;
+
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -48,6 +42,7 @@ namespace Moviesite
             services.AddTransient<IShoppingCartRepository, ShoppingCartRepository>();
             services.AddTransient<IDirectorRepository, DirectorRepository>();
             services.AddTransient<IActorRepository, ActorRepository>();
+            services.AddTransient<IMovieActorRepository, MovieActorRepository>();
 
             //SERVICES
             services.AddTransient<IMovieService, MovieService>();
@@ -58,6 +53,7 @@ namespace Moviesite
             services.AddTransient<IShoppingCartService, ShoppingCartService>();
             services.AddTransient<IDirectorService, DirectorService>();
             services.AddTransient<IActorService, ActorService>();
+            services.AddTransient<IMovieActorService, MovieActorService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

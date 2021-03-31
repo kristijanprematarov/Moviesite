@@ -10,3 +10,15 @@ C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Data\obj\Debug\netcoreapp3.1
 C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Data\bin\Debug\netcoreapp3.1\Moviesite.Entities.dll
 C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Data\bin\Debug\netcoreapp3.1\Moviesite.Entities.pdb
 C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Data\obj\Debug\netcoreapp3.1\Moviesite.Data.csproj.CopyComplete
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Data\bin\Debug\netcoreapp3.1\Moviesite.Data.deps.json
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Data\bin\Debug\netcoreapp3.1\Moviesite.Data.dll
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Data\bin\Debug\netcoreapp3.1\Moviesite.Data.pdb
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Data\bin\Debug\netcoreapp3.1\Moviesite.Entities.dll
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Data\bin\Debug\netcoreapp3.1\Moviesite.Entities.pdb
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Data\obj\Debug\netcoreapp3.1\Moviesite.Data.csprojAssemblyReference.cache
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Data\obj\Debug\netcoreapp3.1\Moviesite.Data.AssemblyInfoInputs.cache
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Data\obj\Debug\netcoreapp3.1\Moviesite.Data.AssemblyInfo.cs
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Data\obj\Debug\netcoreapp3.1\Moviesite.Data.csproj.CoreCompileInputs.cache
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Data\obj\Debug\netcoreapp3.1\Moviesite.Data.csproj.CopyComplete
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Data\obj\Debug\netcoreapp3.1\Moviesite.Data.dll
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Data\obj\Debug\netcoreapp3.1\Moviesite.Data.pdb

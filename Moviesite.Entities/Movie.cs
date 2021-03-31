@@ -27,9 +27,11 @@ namespace Moviesite.Entities
         public string DirectorName { get; set; }
 
         [Display(Name = "Director")]
-
         public int DirectorID { get; set; }
         public Director Director { get; set; }
+
+        [Display(Name = "Actors")]
+        public string ActorNames { get; set; }
 
         public ICollection<MovieActor> MovieActors { get; set; }
 

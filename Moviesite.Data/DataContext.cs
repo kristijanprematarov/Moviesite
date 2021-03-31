@@ -32,14 +32,14 @@ namespace Moviesite.Data
 
             modelBuilder.Entity<MovieActor>()
                 .HasKey(ma => new { ma.MovieID, ma.ActorID });
-            //modelBuilder.Entity<MovieActor>()
-            //    .HasOne(m => m.Movie)
-            //    .WithMany(a => a.MovieActors)
-            //    .HasForeignKey(m => m.MovieID);
-            //modelBuilder.Entity<MovieActor>()
-            //    .HasOne(a => a.Actor)
-            //    .WithMany(m => m.MovieActors)
-            //    .HasForeignKey(a => a.ActorID);
+            modelBuilder.Entity<MovieActor>()
+                .HasOne(m => m.Movie)
+                .WithMany(a => a.MovieActors)
+                .HasForeignKey(m => m.MovieID);
+            modelBuilder.Entity<MovieActor>()
+                .HasOne(a => a.Actor)
+                .WithMany(m => m.MovieActors)
+                .HasForeignKey(a => a.ActorID);
         }
     }
 }

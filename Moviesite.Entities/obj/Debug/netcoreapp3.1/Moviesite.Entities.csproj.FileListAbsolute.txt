@@ -7,3 +7,11 @@ C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Entities\obj\Debug\netcoreap
 C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Entities\obj\Debug\netcoreapp3.1\Moviesite.Entities.dll
 C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Entities\obj\Debug\netcoreapp3.1\Moviesite.Entities.pdb
 C:\Users\Kristijan\source\repos\Moviesite\Moviesite.Entities\obj\Debug\netcoreapp3.1\Moviesite.Entities.csprojAssemblyReference.cache
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Entities\bin\Debug\netcoreapp3.1\Moviesite.Entities.deps.json
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Entities\bin\Debug\netcoreapp3.1\Moviesite.Entities.dll
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Entities\bin\Debug\netcoreapp3.1\Moviesite.Entities.pdb
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Entities\obj\Debug\netcoreapp3.1\Moviesite.Entities.AssemblyInfoInputs.cache
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Entities\obj\Debug\netcoreapp3.1\Moviesite.Entities.AssemblyInfo.cs
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Entities\obj\Debug\netcoreapp3.1\Moviesite.Entities.csproj.CoreCompileInputs.cache
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Entities\obj\Debug\netcoreapp3.1\Moviesite.Entities.dll
+C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite.Entities\obj\Debug\netcoreapp3.1\Moviesite.Entities.pdb

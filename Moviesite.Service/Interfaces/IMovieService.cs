@@ -25,7 +25,7 @@ namespace Moviesite.Service.Interfaces
         (List<SelectListItem> Genres,
             List<SelectListItem> Producers,
             List<SelectListItem> Directors,
-            List<SelectListItem> Actors) FillDropdowns(
+            MultiSelectList Actors) FillDropdowns(
             IEnumerable<Genre> genres,
             IEnumerable<Producer> producers,
             IEnumerable<Director> directors,

@@ -16,5 +16,7 @@ namespace Moviesite.Service.Interfaces
         Actor GetActorById(int id);
 
         IEnumerable<Actor> GetAllActors();
+
+        string GetAllActorNames(int[] actorIds);
     }
 }
