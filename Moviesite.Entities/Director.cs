@@ -22,9 +22,6 @@ namespace Moviesite.Entities
         public string ShortDescription { get; set; }
 
         [StringLength(50)]
-        public string Language { get; set; }
-
-        [StringLength(50)]
         public string Gender { get; set; }
 
         public virtual ICollection<Movie> Movies { get; set; }

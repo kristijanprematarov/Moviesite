@@ -14,14 +14,19 @@
             _movieActorRepository = movieActorRepository;
         }
 
-        public void AddMovieActors(Actor actor, Movie movie)
+        public void AddMovieActor(Actor actor, Movie movie)
         {
-            _movieActorRepository.AddMovieActors(actor, movie);
+            _movieActorRepository.AddMovieActor(actor, movie);
         }
 
         public void AddMovieActorsList(List<MovieActor> movieActors)
         {
             _movieActorRepository.AddMovieActorsList(movieActors);
+        }
+
+        public void DeleteMovieActor(MovieActor movieActor)
+        {
+            _movieActorRepository.DeleteMovieActor(movieActor);
         }
     }
 }

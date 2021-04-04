@@ -5,10 +5,10 @@
 
     public interface IMovieActorRepository
     {
-        void AddMovieActors(Actor actor, Movie movie);
+        void AddMovieActor(Actor actor, Movie movie);
 
         void AddMovieActorsList(List<MovieActor> movieActors);
 
-        void DeleteMovieActors(MovieActor movieActor);
+        void DeleteMovieActor(MovieActor movieActor);
     }
 }

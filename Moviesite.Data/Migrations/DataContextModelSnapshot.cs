@@ -244,6 +244,136 @@ namespace Moviesite.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Actors");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Country = "Australia",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 406, DateTimeKind.Local).AddTicks(900),
+                            Gender = "Male",
+                            Name = "Chris Hemsworth"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 408, DateTimeKind.Local).AddTicks(9077),
+                            Gender = "Male",
+                            Name = "Robert Downey Jr."
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 408, DateTimeKind.Local).AddTicks(9123),
+                            Gender = "Male",
+                            Name = "Chris Evans"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 408, DateTimeKind.Local).AddTicks(9128),
+                            Gender = "Female",
+                            Name = "Scarlett Johansson"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 408, DateTimeKind.Local).AddTicks(9131),
+                            Gender = "Male",
+                            Name = "Mark Ruffalo"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 408, DateTimeKind.Local).AddTicks(9134),
+                            Gender = "Male",
+                            Name = "Jeremy Lee Renner"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Country = "England",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 408, DateTimeKind.Local).AddTicks(9138),
+                            Gender = "Male",
+                            Name = "Tom Hiddleston"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 408, DateTimeKind.Local).AddTicks(9142),
+                            Gender = "Male",
+                            Name = "Robert Clark Gregg"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Country = "Canada",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 408, DateTimeKind.Local).AddTicks(9145),
+                            Gender = "Female",
+                            Name = "Cobie Smulders"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Country = "Sweden",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 408, DateTimeKind.Local).AddTicks(9148),
+                            Gender = "Male",
+                            Name = "Stellan John Skarsgard"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 408, DateTimeKind.Local).AddTicks(9151),
+                            Gender = "Male",
+                            Name = "Samuel L. Jackson"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 408, DateTimeKind.Local).AddTicks(9154),
+                            Gender = "Female",
+                            Name = "Karen Gillan"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 408, DateTimeKind.Local).AddTicks(9157),
+                            Gender = "Female",
+                            Name = "Brie Larson"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 408, DateTimeKind.Local).AddTicks(9159),
+                            Gender = "Male",
+                            Name = "Jon Favreau"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 408, DateTimeKind.Local).AddTicks(9162),
+                            Gender = "Male",
+                            Name = "Bradley Cooper"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 408, DateTimeKind.Local).AddTicks(9166),
+                            Gender = "Male",
+                            Name = "Josh Brolin"
+                        });
                 });
 
             modelBuilder.Entity("Moviesite.Entities.Director", b =>
@@ -264,10 +394,6 @@ namespace Moviesite.Data.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
 
-                    b.Property<string>("Language")
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
-
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(100)")
                         .HasMaxLength(100);
@@ -279,6 +405,125 @@ namespace Moviesite.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Directors");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 410, DateTimeKind.Local).AddTicks(6579),
+                            Gender = "Male",
+                            Name = "Christopher Nolan",
+                            ShortDescription = ""
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 410, DateTimeKind.Local).AddTicks(7551),
+                            Gender = "Male",
+                            Name = "Steven Spielberg",
+                            ShortDescription = ""
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 410, DateTimeKind.Local).AddTicks(7587),
+                            Gender = "Male",
+                            Name = "Spike Lee",
+                            ShortDescription = ""
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 410, DateTimeKind.Local).AddTicks(7591),
+                            Gender = "Male",
+                            Name = "Quentin Tarantino",
+                            ShortDescription = ""
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 410, DateTimeKind.Local).AddTicks(7594),
+                            Gender = "Male",
+                            Name = "Irwin Winkler",
+                            ShortDescription = ""
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 410, DateTimeKind.Local).AddTicks(7596),
+                            Gender = "Male",
+                            Name = "Martin Scorsese",
+                            ShortDescription = ""
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 410, DateTimeKind.Local).AddTicks(7600),
+                            Gender = "Male",
+                            Name = "Tim Burton",
+                            ShortDescription = ""
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 410, DateTimeKind.Local).AddTicks(7603),
+                            Gender = "Male",
+                            Name = "Kevin Feige",
+                            ShortDescription = ""
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 410, DateTimeKind.Local).AddTicks(7605),
+                            Gender = "Male",
+                            Name = "Jason Blum",
+                            ShortDescription = ""
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Country = "Canada",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 410, DateTimeKind.Local).AddTicks(7608),
+                            Gender = "Male",
+                            Name = "James Cameron",
+                            ShortDescription = ""
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 410, DateTimeKind.Local).AddTicks(7612),
+                            Gender = "Male",
+                            Name = "George Lucas",
+                            ShortDescription = ""
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 410, DateTimeKind.Local).AddTicks(7615),
+                            Gender = "Male",
+                            Name = "Joe Russo",
+                            ShortDescription = ""
+                        },
+                        new
+                        {
+                            Id = 13,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 410, DateTimeKind.Local).AddTicks(7618),
+                            Gender = "Male",
+                            Name = "Sam Hargrave",
+                            ShortDescription = ""
+                        });
                 });
 
             modelBuilder.Entity("Moviesite.Entities.Genre", b =>
@@ -295,6 +540,68 @@ namespace Moviesite.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Genres");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Fiction"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Action"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Crime"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "Adventure"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Name = "Drama"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Name = "Fantasy"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Name = "Thriller"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Name = "General"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Name = "Horror"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Name = "Comedy"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Name = "Sci-Fi"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Name = "Uncategorised"
+                        });
                 });
 
             modelBuilder.Entity("Moviesite.Entities.Movie", b =>
@@ -383,6 +690,58 @@ namespace Moviesite.Data.Migrations
                     b.HasIndex("ProducerID");
 
                     b.ToTable("Movies");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ActorNames = "Chris Hemsworth, Mark Ruffalo, Scarlet Johannson, Karen Gillan, Robert Downey Jr., Samuel L. Jackson, Jeremy Lee Renner, Tom Hiddleston, Chris Evans, Brie Larson, Josh Brolin",
+                            Country = "USA",
+                            DateAdded = new DateTime(2021, 4, 4, 11, 50, 22, 410, DateTimeKind.Local).AddTicks(9385),
+                            Description = "",
+                            DirectorID = 8,
+                            DirectorName = "Kevin Feige",
+                            Duration = "",
+                            FormatType = "",
+                            GenreID = 11,
+                            GenreName = "Sci-Fi",
+                            Language = "English",
+                            PhotoURL = "Avengers.jpg",
+                            Price = 1.0,
+                            ProducerID = 8,
+                            ProducerName = "Kevin Feige",
+                            Rating = 5.0,
+                            ReleaseDate = new DateTime(2019, 2, 20, 21, 30, 15, 0, DateTimeKind.Unspecified),
+                            Shipping = "Yes",
+                            SoldItems = 50,
+                            Title = "Avengers",
+                            UserId = 0
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ActorNames = "Chris Hemsworth",
+                            Country = "USA",
+                            DateAdded = new DateTime(2021, 4, 4, 11, 50, 22, 411, DateTimeKind.Local).AddTicks(6301),
+                            Description = "",
+                            DirectorID = 13,
+                            DirectorName = "Sam Hargrave",
+                            Duration = "",
+                            FormatType = "",
+                            GenreID = 2,
+                            GenreName = "Action",
+                            Language = "English",
+                            PhotoURL = "Extraction.jpg",
+                            Price = 1.0,
+                            ProducerID = 12,
+                            ProducerName = "Joe Russo",
+                            Rating = 5.0,
+                            ReleaseDate = new DateTime(2020, 2, 19, 22, 15, 15, 0, DateTimeKind.Unspecified),
+                            Shipping = "Yes",
+                            SoldItems = 50,
+                            Title = "Extraction",
+                            UserId = 0
+                        });
                 });
 
             modelBuilder.Entity("Moviesite.Entities.MovieActor", b =>
@@ -463,10 +822,6 @@ namespace Moviesite.Data.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasMaxLength(50);
 
-                    b.Property<string>("Language")
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
-
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(100)")
                         .HasMaxLength(100);
@@ -478,6 +833,125 @@ namespace Moviesite.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Producers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 410, DateTimeKind.Local).AddTicks(3458),
+                            Gender = "Male",
+                            Name = "Michael Mann",
+                            ShortDescription = ""
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 410, DateTimeKind.Local).AddTicks(4328),
+                            Gender = "Male",
+                            Name = "Steven Spielberg",
+                            ShortDescription = ""
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 410, DateTimeKind.Local).AddTicks(4353),
+                            Gender = "Male",
+                            Name = "Spike Lee",
+                            ShortDescription = ""
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 410, DateTimeKind.Local).AddTicks(4356),
+                            Gender = "Male",
+                            Name = "Quentin Tarantino",
+                            ShortDescription = ""
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 410, DateTimeKind.Local).AddTicks(4359),
+                            Gender = "Male",
+                            Name = "Irwin Winkler",
+                            ShortDescription = ""
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 410, DateTimeKind.Local).AddTicks(4362),
+                            Gender = "Female",
+                            Name = "Kathleen Kennedy",
+                            ShortDescription = ""
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 410, DateTimeKind.Local).AddTicks(4365),
+                            Gender = "Female",
+                            Name = "Nina Jacobson",
+                            ShortDescription = ""
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 410, DateTimeKind.Local).AddTicks(4368),
+                            Gender = "Male",
+                            Name = "Kevin Feige",
+                            ShortDescription = ""
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 410, DateTimeKind.Local).AddTicks(4371),
+                            Gender = "Male",
+                            Name = "Jason Blum",
+                            ShortDescription = ""
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Country = "Canada",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 410, DateTimeKind.Local).AddTicks(4374),
+                            Gender = "Male",
+                            Name = "James Cameron",
+                            ShortDescription = ""
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 410, DateTimeKind.Local).AddTicks(4377),
+                            Gender = "Male",
+                            Name = "George Lucas",
+                            ShortDescription = ""
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 410, DateTimeKind.Local).AddTicks(4380),
+                            Gender = "Male",
+                            Name = "Joe Russo",
+                            ShortDescription = ""
+                        },
+                        new
+                        {
+                            Id = 13,
+                            Country = "USA",
+                            DateBirth = new DateTime(2021, 4, 4, 11, 50, 22, 410, DateTimeKind.Local).AddTicks(4383),
+                            Gender = "Male",
+                            Name = "Sam Hargrave",
+                            ShortDescription = ""
+                        });
                 });
 
             modelBuilder.Entity("Moviesite.Entities.ShoppingCart", b =>

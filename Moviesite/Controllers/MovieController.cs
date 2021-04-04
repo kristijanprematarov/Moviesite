@@ -92,9 +92,9 @@
 
                 List<MovieActor> movieActors = new List<MovieActor>();
 
-                foreach (var actorIds in movieViewModel.ActorIds)
+                foreach (var actorId in movieViewModel.ActorIds)
                 {
-                    var actor = _actorService.GetActorById(actorIds);
+                    var actor = _actorService.GetActorById(actorId);
                     movieActors.Add(new MovieActor { Actor = actor, Movie = movie });
                 }
 

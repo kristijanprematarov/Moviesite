@@ -458,3 +458,7 @@ C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2
 C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite\obj\Debug\netcoreapp3.1\Razor\Views\Director\Create.cshtml.g.cs
 C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite\obj\Debug\netcoreapp3.1\Razor\Views\Producer\Create.cshtml.g.cs
 C:\Users\jorgos.lambrinidis.BTOBET\Desktop\WORK\Code Academy\08_PROJECTS\GROUP 2\Student Git Account Projects\Moviesite\Moviesite\obj\Debug\netcoreapp3.1\Razor\Views\Genre\Create.cshtml.g.cs
+C:\Users\Kristijan\source\repos\Moviesite\Moviesite\obj\Debug\netcoreapp3.1\Razor\Views\Actor\Create.cshtml.g.cs
+C:\Users\Kristijan\source\repos\Moviesite\Moviesite\obj\Debug\netcoreapp3.1\Razor\Views\Director\Create.cshtml.g.cs
+C:\Users\Kristijan\source\repos\Moviesite\Moviesite\obj\Debug\netcoreapp3.1\Razor\Views\Genre\Create.cshtml.g.cs
+C:\Users\Kristijan\source\repos\Moviesite\Moviesite\obj\Debug\netcoreapp3.1\Razor\Views\Producer\Create.cshtml.g.cs

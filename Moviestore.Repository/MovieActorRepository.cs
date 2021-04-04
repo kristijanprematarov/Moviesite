@@ -14,7 +14,7 @@
             _context = context;
         }
 
-        public void AddMovieActors(Actor actor, Movie movie)
+        public void AddMovieActor(Actor actor, Movie movie)
         {
             var movieActor = new MovieActor { MovieID = movie.Id, ActorID = actor.Id };
             _context.MovieActors.Add(movieActor);
@@ -27,9 +27,9 @@
             _context.SaveChanges();
         }
 
-        public void DeleteMovieActors(MovieActor movieActor)
+        public void DeleteMovieActor(MovieActor movieActor)
         {
-            _context.MovieActors.Add(movieActor);
+            _context.MovieActors.Remove(movieActor);
             _context.SaveChanges();
         }
     }

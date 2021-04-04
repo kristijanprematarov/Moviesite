@@ -1,8 +1,54 @@
-﻿@{
+﻿@model Moviesite.ViewModels.HomeViewModel
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!-- Search Section -->
+<div class="container">
+    <form asp-action="Search">
+        <div class="p-3 search-main">
+            <button class="btn search-btn-icon">
+                <i class="fa fa-search"></i>
+            </button>
+            <input type="text" class="form-control search-box-style" id="searchbook" />
+            <button class="btn btn-success search-btn" id="searchBtn">Search</button>
+        </div>
+    </form>
+</div>
+
+<!-- Banner Section -->
+<div class="container-fluid moviesite-background text-right">
+    <h1 class="display-4 banner-text-style1">Welcome to our online moviesite !</h1>
+    <h4 class="display-4 banner-text-style2">Find your next adventure !</h4>
+    <div class="col-12 col-md-7 quotes-section">
+        <blockquote class="quote-text-quote" id="quote"></blockquote>
+        <p class="quote-text-author" id="quote_author"></p>
+        <p class="quote-text-tags" id="quote_tags"></p>
+    </div>
+</div>
+
+<!-- All Movies Section -->
+<div class="container-fluid">
+    <h2>All Movies</h2>
+    <h6><em>List of all movies</em></h6>
+    <div class="row pb-5">
+        @foreach (var movie in Model.AllMoviesList)
+        {
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-5">
+                <div class="card h-100 mx-auto" style="max-width: 350px;">
+                    <img src="~/photos/@movie.PhotoURL" alt="Alternate Text" class="card-img-top" style="height:450px" />
+                    <div class="card-body">
+                        <h5 class="card-title">@Html.DisplayFor(modelItem => movie.Title)</h5>
+                        <h6 class=""><em>by @Html.DisplayFor(modelItem => movie.DirectorName)</em></h6>
+                        <hr />
+                        <p class="card-text">Category: @Html.DisplayFor(modelItem => movie.GenreName)</p>
+                        <button class="btn btn-secondary btn-block"><i class="fas fa-plus-circle"></i> Add to Wishlist</button>
+                        <button class="btn btn-success btn-block"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
 </div>
