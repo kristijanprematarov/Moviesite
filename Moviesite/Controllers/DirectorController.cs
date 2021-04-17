@@ -1,16 +1,19 @@
 ﻿namespace Moviesite.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
+    using Microsoft.Extensions.Logging;
     using Moviesite.Entities;
     using Moviesite.Service.Interfaces;
 
     public class DirectorController : Controller
     {
         private readonly IDirectorService _directorService;
+        private readonly ILogger<DirectorController> _logger;
 
-        public DirectorController(IDirectorService directorService)
+        public DirectorController(IDirectorService directorService, ILogger<DirectorController> logger)
         {
             _directorService = directorService;
+            this._logger = logger;
         }
 
         public IActionResult Index()

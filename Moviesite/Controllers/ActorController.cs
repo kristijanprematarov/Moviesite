@@ -1,6 +1,7 @@
 ﻿namespace Moviesite.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
+    using Microsoft.Extensions.Logging;
     using Moviesite.Entities;
     using Moviesite.Service.Interfaces;
     using System;
@@ -11,10 +12,12 @@
     public class ActorController : Controller
     {
         private readonly IActorService _actorService;
+        private readonly ILogger<ActorController> _logger;
 
-        public ActorController(IActorService actorService)
+        public ActorController(IActorService actorService, ILogger<ActorController> logger)
         {
             _actorService = actorService;
+            this._logger = logger;
         }
 
         public IActionResult Index()

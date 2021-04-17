@@ -1,16 +1,19 @@
 ﻿namespace Moviesite.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
+    using Microsoft.Extensions.Logging;
     using Moviesite.Entities;
     using Moviesite.Service.Interfaces;
 
     public class GenreController : Controller
     {
         private readonly IGenreService _genreService;
+        private readonly ILogger<GenreController> _logger;
 
-        public GenreController(IGenreService genreService)
+        public GenreController(IGenreService genreService, ILogger<GenreController> logger)
         {
             _genreService = genreService;
+            this._logger = logger;
         }
 
         public IActionResult Index()

@@ -2,6 +2,7 @@
 {
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
+    using Microsoft.Extensions.Logging;
     using Moviesite.Entities;
     using Moviesite.Models;
     using Moviesite.Service.Interfaces;
@@ -18,6 +19,7 @@
         private readonly IProducerService _producerService;
         private readonly IActorService _actorService;
         private readonly IMovieActorService _movieActorService;
+        private readonly ILogger<MovieController> _logger;
 
         public MovieController(
             IMovieService movieService,
@@ -25,7 +27,8 @@
             IDirectorService directorService,
             IProducerService producerService,
             IActorService actorService,
-            IMovieActorService movieActorService)
+            IMovieActorService movieActorService,
+            ILogger<MovieController> logger)
         {
             _movieService = movieService;
             _genreService = genreService;
@@ -33,6 +36,7 @@
             _producerService = producerService;
             _actorService = actorService;
             _movieActorService = movieActorService;
+            this._logger = logger;
         }
 
         public IActionResult Index()

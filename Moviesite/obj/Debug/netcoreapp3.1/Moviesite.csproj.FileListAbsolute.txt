@@ -474,3 +474,7 @@ C:\Users\Kristijan\source\repos\Moviesite\Moviesite\obj\Debug\netcoreapp3.1\Razo
 C:\Users\Kristijan\source\repos\Moviesite\Moviesite\obj\Debug\netcoreapp3.1\Razor\Views\Director\Details.cshtml.g.cs
 C:\Users\Kristijan\source\repos\Moviesite\Moviesite\obj\Debug\netcoreapp3.1\Razor\Views\Director\Edit.cshtml.g.cs
 C:\Users\Kristijan\source\repos\Moviesite\Moviesite\obj\Debug\netcoreapp3.1\Razor\Views\Director\Delete.cshtml.g.cs
+C:\Users\Kristijan\source\repos\Moviesite\Moviesite\bin\Debug\netcoreapp3.1\nlog.config
+C:\Users\Kristijan\source\repos\Moviesite\Moviesite\bin\Debug\netcoreapp3.1\NLog.dll
+C:\Users\Kristijan\source\repos\Moviesite\Moviesite\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+C:\Users\Kristijan\source\repos\Moviesite\Moviesite\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll

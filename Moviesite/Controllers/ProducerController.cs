@@ -1,16 +1,19 @@
 ﻿namespace Moviesite.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
+    using Microsoft.Extensions.Logging;
     using Moviesite.Entities;
     using Moviesite.Service.Interfaces;
 
     public class ProducerController : Controller
     {
         private readonly IProducerService _producerService;
+        private readonly ILogger<ProducerController> _logger;
 
-        public ProducerController(IProducerService producerService)
+        public ProducerController(IProducerService producerService, ILogger<ProducerController> logger)
         {
             _producerService = producerService;
+            this._logger = logger;
         }
 
         public IActionResult Index()
