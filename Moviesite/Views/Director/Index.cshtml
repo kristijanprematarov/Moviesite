@@ -49,17 +49,17 @@
                                 @Html.DisplayFor(modelItem => director.Gender)
                             </td>
                             <td>
-                                <a class="btn-secondary btn btn-block" asp-controller="Movie" asp-action="Edit" asp-route-id="@director.Id">
+                                <a class="btn-secondary btn btn-block" asp-controller="Director" asp-action="Edit" asp-route-id="@director.Id">
                                     <i class="fas fa-edit"></i>
                                     &nbsp; &nbsp;
                                     Edit
                                 </a>
-                                <a class="btn-info btn btn-block" asp-controller="Movie" asp-action="Details" asp-route-id="@director.Id">
+                                <a class="btn-info btn btn-block" asp-controller="Director" asp-action="Details" asp-route-id="@director.Id">
                                     <i class="fas fa-info"></i>
                                     &nbsp; &nbsp;
                                     Details
                                 </a>
-                                <a class="btn-danger btn btn-block" asp-controller="Movie" asp-action="Delete" asp-route-id="@director.Id">
+                                <a class="btn-danger btn btn-block" asp-controller="Director" asp-action="Delete" asp-route-id="@director.Id">
                                     <i class="fas fa-trash"></i>
                                     &nbsp; &nbsp;
                                     Delete

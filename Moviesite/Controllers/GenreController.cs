@@ -35,5 +35,41 @@
 
             return RedirectToAction(nameof(Index));
         }
+
+        [HttpGet]
+        public IActionResult Details(int id)
+        {
+            var genre = _genreService.GetGenreById(id);
+            return View(genre);
+        }
+
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            var genre = _genreService.GetGenreById(id);
+            return View(genre);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Genre genre)
+        {
+            _genreService.Edit(genre);
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            var genre = _genreService.GetGenreById(id);
+            return View(genre);
+        }
+
+        [HttpPost]
+        public IActionResult Delete(Genre genre)
+        {
+            _genreService.Delete(genre.Id);
+
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

@@ -25,7 +25,6 @@
                         <th>Country</th>
                         <th>DateBirth</th>
                         <th>ShortDescription</th>
-                        <th>Language</th>
                         <th>Gender</th>
                         <th>Actions</th>
                     </tr>
@@ -54,17 +53,17 @@
                                 @Html.DisplayFor(modelItem => producer.Gender)
                             </td>
                             <td>
-                                <a class="btn-secondary btn btn-block" asp-controller="Movie" asp-action="Edit" asp-route-id="@producer.Id">
+                                <a class="btn-secondary btn btn-block" asp-controller="Producer" asp-action="Edit" asp-route-id="@producer.Id">
                                     <i class="fas fa-edit"></i>
                                     &nbsp; &nbsp;
                                     Edit
                                 </a>
-                                <a class="btn-info btn btn-block" asp-controller="Movie" asp-action="Details" asp-route-id="@producer.Id">
+                                <a class="btn-info btn btn-block" asp-controller="Producer" asp-action="Details" asp-route-id="@producer.Id">
                                     <i class="fas fa-info"></i>
                                     &nbsp; &nbsp;
                                     Details
                                 </a>
-                                <a class="btn-danger btn btn-block" asp-controller="Movie" asp-action="Delete" asp-route-id="@producer.Id">
+                                <a class="btn-danger btn btn-block" asp-controller="Producer" asp-action="Delete" asp-route-id="@producer.Id">
                                     <i class="fas fa-trash"></i>
                                     &nbsp; &nbsp;
                                     Delete

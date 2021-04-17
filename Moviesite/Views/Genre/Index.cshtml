@@ -37,17 +37,17 @@
                                 @Html.DisplayFor(modelItem => genre.Name)
                             </td>
                             <td>
-                                <a class="btn-secondary btn btn-block" asp-controller="Movie" asp-action="Edit" asp-route-id="@genre.Id">
+                                <a class="btn-secondary btn btn-block" asp-controller="Genre" asp-action="Edit" asp-route-id="@genre.Id">
                                     <i class="fas fa-edit"></i>
                                     &nbsp; &nbsp;
                                     Edit
                                 </a>
-                                <a class="btn-info btn btn-block" asp-controller="Movie" asp-action="Details" asp-route-id="@genre.Id">
+                                <a class="btn-info btn btn-block" asp-controller="Genre" asp-action="Details" asp-route-id="@genre.Id">
                                     <i class="fas fa-info"></i>
                                     &nbsp; &nbsp;
                                     Details
                                 </a>
-                                <a class="btn-danger btn btn-block" asp-controller="Movie" asp-action="Delete" asp-route-id="@genre.Id">
+                                <a class="btn-danger btn btn-block" asp-controller="Genre" asp-action="Delete" asp-route-id="@genre.Id">
                                     <i class="fas fa-trash"></i>
                                     &nbsp; &nbsp;
                                     Delete

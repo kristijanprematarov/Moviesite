@@ -11,21 +11,31 @@
             <button class="btn search-btn-icon">
                 <i class="fa fa-search"></i>
             </button>
-            <input type="text" class="form-control search-box-style" id="searchbook" />
+            <input type="text" class="form-control search-box-style" id="searchmovie" />
             <button class="btn btn-success search-btn" id="searchBtn">Search</button>
         </div>
     </form>
 </div>
 
 <!-- Banner Section -->
-<div class="container-fluid moviesite-background text-right">
-    <h1 class="display-4 banner-text-style1">Welcome to our online moviesite !</h1>
-    <h4 class="display-4 banner-text-style2">Find your next adventure !</h4>
-    <div class="col-12 col-md-7 quotes-section">
-        <blockquote class="quote-text-quote" id="quote"></blockquote>
-        <p class="quote-text-author" id="quote_author"></p>
-        <p class="quote-text-tags" id="quote_tags"></p>
-    </div>
+<div class="container-fluid px-0 banner-container text-center text-sm-left">
+    @*<h1 class="display-4 banner-text-style1">Welcome to our online moviesite !</h1>
+        <h4 class="display-4 banner-text-style2">Find your next adventure !</h4>
+        <div class="col-12 col-md-7 quotes-section">
+            <blockquote class="quote-text-quote" id="quote"></blockquote>
+            <p class="quote-text-author" id="quote_author"></p>
+            <p class="quote-text-tags" id="quote_tags"></p>
+        </div>*@
+    <div class="moviesite-background"></div>
+    @*<div class="col-12 col-md-7 quotes-section">
+            <h1 class="display-4 banner-text-style1 animate__animated animate__fadeIn animate__slower pt-5">Welcome to our online bookstore !!!</h1>
+            <h4 class="display-4 banner-text-style2 animate__animated animate__fadeIn animate__slower animate__delay-1s">Find your next adventure!</h4>
+            <blockquote class="quote-text-quote" id="quote"></blockquote>
+            <div class="quotes-section">
+                <p class="quote-text-author" id="quote_author"></p>
+                <p class="quote-text-tags" id="quote_tags"></p>
+            </div>
+        </div>*@
 </div>
 
 <!-- All Movies Section -->
@@ -35,16 +45,36 @@
     <div class="row pb-5">
         @foreach (var movie in Model.AllMoviesList)
         {
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-5">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-5">
                 <div class="card h-100 mx-auto" style="max-width: 350px;">
-                    <img src="~/photos/@movie.PhotoURL" alt="Alternate Text" class="card-img-top" style="height:450px" />
+                    <div class="image">
+                        <img src="~/photos/@movie.PhotoURL" alt="Alternate Text" class="card-img-top" style="height:450px" />
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title">@Html.DisplayFor(modelItem => movie.Title)</h5>
-                        <h6 class=""><em>by @Html.DisplayFor(modelItem => movie.DirectorName)</em></h6>
+                        <div class="text-center d-flex flex-column justify-content-center" style="height:120px">
+                            <h5 class="card-title w-100"><a class="text-dark" href="/Movie/Details/@movie.Id">@Html.DisplayFor(modelItem => movie.Title)</a></h5>
+                            <h6 class=""><em>Directed by <a class="text-dark" href="/Director/Details/@movie.DirectorID">@Html.DisplayFor(modelItem => movie.DirectorName)</a></em></h6>
+                            <h6 class=""><em>Produced by <a class="text-dark" href="/Producer/Details/@movie.ProducerID">@Html.DisplayFor(modelItem => movie.ProducerName)</a></em></h6>
+                        </div>
                         <hr />
-                        <p class="card-text">Category: @Html.DisplayFor(modelItem => movie.GenreName)</p>
+                        <p class="card-text">Genre: @Html.DisplayFor(modelItem => movie.GenreName)</p>
+                        <p class="card-text">Movie Rating: @Html.DisplayFor(modelItem => movie.Rating)/5.0</p>
                         <button class="btn btn-secondary btn-block"><i class="fas fa-plus-circle"></i> Add to Wishlist</button>
                         <button class="btn btn-success btn-block"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                        @*@if (ViewContext.HttpContext.User.IsInRole("guest") || ViewContext.HttpContext.User.IsInRole("editor") || ViewContext.HttpContext.User.IsInRole("admin"))
+                            {
+                                <button class="btn btn-secondary btn-block"><i class="fas fa-plus-circle"></i> Add to Wishlist</button>
+                                <button class="btn btn-success btn-block"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                            }
+                            else
+                            {
+                                <a class="btn btn-secondary btn-block text-light text-decoration-none" asp-area="Identity" asp-page="/Account/Login"><i class="fas fa-plus-circle"></i> Add to Wishlist</a>
+
+                                <a class="btn btn-success btn-block text-light text-decoration-none" asp-area="Identity" asp-page="/Account/Login"><i class="fas fa-cart-plus"></i> Add to Cart</a>
+                            }*@
+                    </div>
+                    <div class="price text-center">
+                        <p class="w-75 mx-auto card-text bg-light text-success font-weight-bold rounded-pill animate__animated animate__heartBeat animate__infinite animate__faster">@Html.DisplayFor(modelItem => movie.Price)&euro;</p>
                     </div>
                 </div>
             </div>
@@ -52,3 +82,7 @@
 
     </div>
 </div>
+
+@section Scripts {
+    <script src="~/js/home/home.js"></script>
+}
