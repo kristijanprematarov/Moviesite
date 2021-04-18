@@ -3,78 +3,73 @@
 <div class="container">
     <h1>Producer</h1>
 
-    <div class="row">
-        <div class="row mt-4">
-            <div class="col-12 col-md-12">
-                <a class="btn-success btn btn-block" asp-controller="Producer" asp-action="Create">
-                    <i class="fas fa-plus-circle"></i>
-                    &nbsp; &nbsp;
-                    Create
-                </a>
-            </div>
-        </div>
-
-        <div class="col-12">
-
-            <table class="table table-bordered">
-
-                <thead class="thead-dark">
-                    <tr>
-                        <th>Id</th>
-                        <th>Name</th>
-                        <th>Country</th>
-                        <th>DateBirth</th>
-                        <th>ShortDescription</th>
-                        <th>Gender</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    @foreach (var producer in Model)
-                    {
-                        <tr>
-                            <td>
-                                @Html.DisplayFor(modelItem => producer.Id)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => producer.Name)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => producer.Country)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => producer.DateBirth)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => producer.ShortDescription)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => producer.Gender)
-                            </td>
-                            <td>
-                                <a class="btn-secondary btn btn-block" asp-controller="Producer" asp-action="Edit" asp-route-id="@producer.Id">
-                                    <i class="fas fa-edit"></i>
-                                    &nbsp; &nbsp;
-                                    Edit
-                                </a>
-                                <a class="btn-info btn btn-block" asp-controller="Producer" asp-action="Details" asp-route-id="@producer.Id">
-                                    <i class="fas fa-info"></i>
-                                    &nbsp; &nbsp;
-                                    Details
-                                </a>
-                                <a class="btn-danger btn btn-block" asp-controller="Producer" asp-action="Delete" asp-route-id="@producer.Id">
-                                    <i class="fas fa-trash"></i>
-                                    &nbsp; &nbsp;
-                                    Delete
-                                </a>
-                            </td>
-                        </tr>
-                    }
-                </tbody>
-
-            </table>
-
+    <div class="row mb-4">
+        <div class="col-12 col-md-12">
+            <a class="btn-success btn float-right" asp-controller="Producer" asp-action="Create">
+                <i class="fas fa-plus-circle"></i>
+                &nbsp; &nbsp;
+                Create
+            </a>
         </div>
     </div>
+
+    <table class="table table-bordered">
+
+        <thead class="thead-dark">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Country</th>
+                <th>DateBirth</th>
+                <th>ShortDescription</th>
+                <th>Gender</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var producer in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => producer.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => producer.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => producer.Country)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => producer.DateBirth)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => producer.ShortDescription)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => producer.Gender)
+                    </td>
+                    <td>
+                        <a class="btn-secondary btn btn-block" asp-controller="Producer" asp-action="Edit" asp-route-id="@producer.Id">
+                            <i class="fas fa-edit"></i>
+                            &nbsp; &nbsp;
+                            Edit
+                        </a>
+                        <a class="btn-info btn btn-block" asp-controller="Producer" asp-action="Details" asp-route-id="@producer.Id">
+                            <i class="fas fa-info"></i>
+                            &nbsp; &nbsp;
+                            Details
+                        </a>
+                        <a class="btn-danger btn btn-block" asp-controller="Producer" asp-action="Delete" asp-route-id="@producer.Id">
+                            <i class="fas fa-trash"></i>
+                            &nbsp; &nbsp;
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+
 </div>

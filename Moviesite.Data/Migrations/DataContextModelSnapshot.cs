@@ -44,6 +44,29 @@ namespace Moviesite.Data.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "b4280b6a-0613-4cbd-a9e6-f1701e926e73",
+                            ConcurrencyStamp = "7e8db2f6-45a5-44c7-9c4c-fa62f61b5520",
+                            Name = "admin",
+                            NormalizedName = "ADMIN"
+                        },
+                        new
+                        {
+                            Id = "b4280b6a-0613-4cbd-a9e6-f1701e926e74",
+                            ConcurrencyStamp = "e677f74b-1faf-49d8-b4b1-21ce79b1a377",
+                            Name = "editor",
+                            NormalizedName = "EDITOR"
+                        },
+                        new
+                        {
+                            Id = "b4280b6a-0613-4cbd-a9e6-f1701e926e75",
+                            ConcurrencyStamp = "57f0790b-699d-4595-a6ac-26c5c6b3bf64",
+                            Name = "guest",
+                            NormalizedName = "GUEST"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -133,6 +156,24 @@ namespace Moviesite.Data.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "b4280b6a-0613-4cbd-a9e6-f1701e926e73",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "c8554266-b401-4591-9aeb-a9283053fc58",
+                            Email = "admin@moviesite.com",
+                            EmailConfirmed = true,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "ADMIN@MOVIESITE.COM",
+                            NormalizedUserName = "ADMIN@MOVIESITE.COM",
+                            PasswordHash = "AQAAAAEAACcQAAAAEPQxiVTwOiFCKaDAhPb1/1rS61Xe3VxGqIcHKIHR4NjaBinacv3buRCvTh5UC3qb2Q==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "",
+                            TwoFactorEnabled = false,
+                            UserName = "admin@moviesite.com"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -196,6 +237,13 @@ namespace Moviesite.Data.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles");
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = "b4280b6a-0613-4cbd-a9e6-f1701e926e73",
+                            RoleId = "b4280b6a-0613-4cbd-a9e6-f1701e926e73"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
@@ -250,7 +298,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 1,
                             Country = "Australia",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 682, DateTimeKind.Local).AddTicks(3463),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(6845),
                             Gender = "Male",
                             Name = "Chris Hemsworth"
                         },
@@ -258,7 +306,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 2,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6720),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7785),
                             Gender = "Male",
                             Name = "Robert Downey Jr."
                         },
@@ -266,7 +314,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 3,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6794),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7811),
                             Gender = "Male",
                             Name = "Chris Evans"
                         },
@@ -274,7 +322,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 4,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6802),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7815),
                             Gender = "Female",
                             Name = "Scarlett Johansson"
                         },
@@ -282,7 +330,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 5,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6807),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7818),
                             Gender = "Male",
                             Name = "Mark Ruffalo"
                         },
@@ -290,7 +338,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 6,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6811),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7821),
                             Gender = "Male",
                             Name = "Jeremy Lee Renner"
                         },
@@ -298,7 +346,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 7,
                             Country = "England",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6817),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7824),
                             Gender = "Male",
                             Name = "Tom Hiddleston"
                         },
@@ -306,7 +354,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 8,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6821),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7827),
                             Gender = "Male",
                             Name = "Robert Clark Gregg"
                         },
@@ -314,7 +362,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 9,
                             Country = "Canada",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6825),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7830),
                             Gender = "Female",
                             Name = "Cobie Smulders"
                         },
@@ -322,7 +370,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 10,
                             Country = "Sweden",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6829),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7833),
                             Gender = "Male",
                             Name = "Stellan John Skarsgard"
                         },
@@ -330,7 +378,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 11,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6832),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7836),
                             Gender = "Male",
                             Name = "Samuel L. Jackson"
                         },
@@ -338,7 +386,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 12,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6836),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7839),
                             Gender = "Female",
                             Name = "Karen Gillan"
                         },
@@ -346,7 +394,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 13,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6840),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7842),
                             Gender = "Female",
                             Name = "Brie Larson"
                         },
@@ -354,7 +402,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 14,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6843),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7845),
                             Gender = "Male",
                             Name = "Jon Favreau"
                         },
@@ -362,7 +410,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 15,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6847),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7848),
                             Gender = "Male",
                             Name = "Bradley Cooper"
                         },
@@ -370,7 +418,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 16,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6851),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7851),
                             Gender = "Male",
                             Name = "Josh Brolin"
                         },
@@ -378,7 +426,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 17,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6854),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7853),
                             Gender = "Male",
                             Name = "Clark Gregg"
                         },
@@ -386,7 +434,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 18,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6858),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7857),
                             Gender = "Male",
                             Name = "Paul Bettany"
                         },
@@ -394,7 +442,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 19,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6862),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7860),
                             Gender = "Female",
                             Name = "Gwyneth Paltrow"
                         },
@@ -402,7 +450,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 20,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6865),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7862),
                             Gender = "Male",
                             Name = "Terrence Howard"
                         },
@@ -410,7 +458,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 21,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6869),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7865),
                             Gender = "Male",
                             Name = "Jeff Bridges"
                         },
@@ -418,7 +466,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 22,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6874),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7869),
                             Gender = "Male",
                             Name = "Don Cheadle"
                         },
@@ -426,7 +474,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 23,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6879),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7872),
                             Gender = "Male",
                             Name = "Edward Norton"
                         },
@@ -434,7 +482,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 24,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6882),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7874),
                             Gender = "Male",
                             Name = "Tim Roth"
                         },
@@ -442,7 +490,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 25,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6886),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7877),
                             Gender = "Male",
                             Name = "Liv Tyler"
                         },
@@ -450,7 +498,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 26,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6931),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7880),
                             Gender = "Male",
                             Name = "Mickey Rourke"
                         },
@@ -458,7 +506,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 27,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6934),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7883),
                             Gender = "Female",
                             Name = "Natalie Portman"
                         },
@@ -466,7 +514,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 28,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6938),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7929),
                             Gender = "Female",
                             Name = "Rene Russo"
                         },
@@ -474,7 +522,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 29,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6942),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7933),
                             Gender = "Male",
                             Name = "Idris Elba"
                         },
@@ -482,7 +530,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 30,
                             Country = "Japan",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6946),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7936),
                             Gender = "Male",
                             Name = "Tadanobu Asano"
                         },
@@ -490,7 +538,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 31,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6950),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7939),
                             Gender = "Female",
                             Name = "Kat Dennings"
                         },
@@ -498,7 +546,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 32,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6953),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7942),
                             Gender = "Male",
                             Name = "Anthony Hopkins"
                         },
@@ -506,7 +554,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 33,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6957),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7945),
                             Gender = "Female",
                             Name = "Jaimie Alexander"
                         },
@@ -514,7 +562,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 34,
                             Country = "Ireland",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6961),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7948),
                             Gender = "Male",
                             Name = "Ray Stevenson"
                         },
@@ -522,7 +570,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 35,
                             Country = "Romania",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6964),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7951),
                             Gender = "Male",
                             Name = "Sebastian Stan"
                         },
@@ -530,7 +578,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 36,
                             Country = "England",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6968),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7953),
                             Gender = "Female",
                             Name = "Hayley Atwell"
                         },
@@ -538,7 +586,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 37,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6972),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7956),
                             Gender = "Male",
                             Name = "Tommy Lee Jones"
                         },
@@ -546,7 +594,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 38,
                             Country = "Canada",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6975),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7960),
                             Gender = "Female",
                             Name = "Evangeline Lilly"
                         },
@@ -554,7 +602,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 39,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6979),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7963),
                             Gender = "Female",
                             Name = "Chris Pratt"
                         },
@@ -562,7 +610,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 40,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6982),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7967),
                             Gender = "Female",
                             Name = "Zoe Saldana"
                         },
@@ -570,7 +618,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 41,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6986),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7970),
                             Gender = "Male",
                             Name = "Vin Diesel"
                         },
@@ -578,7 +626,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 42,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6990),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7973),
                             Gender = "Male",
                             Name = "Dave Bautista"
                         },
@@ -586,7 +634,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 43,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6993),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7976),
                             Gender = "Male",
                             Name = "Kurt Russell"
                         },
@@ -594,7 +642,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 44,
                             Country = "England",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6997),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7979),
                             Gender = "Male",
                             Name = "Tom Holland"
                         },
@@ -602,7 +650,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 45,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(7001),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7982),
                             Gender = "Male",
                             Name = "Anthony Mackie"
                         },
@@ -610,7 +658,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 46,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(7005),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7986),
                             Gender = "Female",
                             Name = "Elizabeth Olsen"
                         },
@@ -618,7 +666,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 47,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(7008),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7989),
                             Gender = "Male",
                             Name = "Paul Rudd"
                         },
@@ -626,7 +674,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 48,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(7012),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7992),
                             Gender = "Male",
                             Name = "Benedict Cumberbatch"
                         },
@@ -634,7 +682,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 49,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(7016),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7995),
                             Gender = "Male",
                             Name = "Michael B. Jordan"
                         },
@@ -642,7 +690,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 50,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(7020),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7999),
                             Gender = "Male",
                             Name = "Chadwick Boseman"
                         },
@@ -650,7 +698,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 51,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(7023),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(8002),
                             Gender = "Male",
                             Name = "Jake Gyllenhaal"
                         });
@@ -691,7 +739,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 1,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(7892),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(4875),
                             Gender = "Male",
                             Name = "Kevin Feige",
                             ShortDescription = ""
@@ -700,7 +748,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 2,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9193),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5761),
                             Gender = "Male",
                             Name = "Joe Russo",
                             ShortDescription = ""
@@ -709,7 +757,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 3,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9257),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5785),
                             Gender = "Male",
                             Name = "Anthony Russo",
                             ShortDescription = ""
@@ -718,7 +766,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 4,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9263),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5789),
                             Gender = "Female",
                             Name = "Anna Boden",
                             ShortDescription = ""
@@ -727,7 +775,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 5,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9269),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5792),
                             Gender = "Male",
                             Name = "Jon Favreau",
                             ShortDescription = ""
@@ -736,7 +784,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 6,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9273),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5795),
                             Gender = "Male",
                             Name = "Shane Black",
                             ShortDescription = ""
@@ -745,7 +793,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 7,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9277),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5798),
                             Gender = "Male",
                             Name = "Louis Leterrier",
                             ShortDescription = ""
@@ -754,7 +802,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 8,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9282),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5801),
                             Gender = "Male",
                             Name = "Taika Waititi",
                             ShortDescription = ""
@@ -763,7 +811,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 9,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9286),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5804),
                             Gender = "Male",
                             Name = "Alan Taylor",
                             ShortDescription = ""
@@ -772,7 +820,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 10,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9290),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5807),
                             Gender = "Male",
                             Name = "Joss Whedon",
                             ShortDescription = ""
@@ -781,7 +829,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 11,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9295),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5810),
                             Gender = "Male",
                             Name = "Joe Johnston",
                             ShortDescription = ""
@@ -790,7 +838,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 12,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9299),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5813),
                             Gender = "Male",
                             Name = "James Gunn",
                             ShortDescription = ""
@@ -799,7 +847,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 13,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9504),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5816),
                             Gender = "Male",
                             Name = "Peyton Reed",
                             ShortDescription = ""
@@ -808,7 +856,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 14,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9509),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5819),
                             Gender = "Male",
                             Name = "Jon Watts",
                             ShortDescription = ""
@@ -817,7 +865,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 15,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9514),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5822),
                             Gender = "Male",
                             Name = "Scott Derrickson",
                             ShortDescription = ""
@@ -826,7 +874,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 16,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9519),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5825),
                             Gender = "Male",
                             Name = "Ryan Coogler",
                             ShortDescription = ""
@@ -835,7 +883,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 17,
                             Country = "Ireland",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9524),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5828),
                             Gender = "Male",
                             Name = "Kenneth Branagh",
                             ShortDescription = ""
@@ -1013,7 +1061,7 @@ namespace Moviesite.Data.Migrations
                             Id = 1,
                             ActorNames = "Chris Evans, Samuel L. Jackson, Hayley Atwell, Sebastian Bach",
                             Country = "USA",
-                            DateAdded = new DateTime(2021, 4, 17, 19, 28, 2, 690, DateTimeKind.Local).AddTicks(2549),
+                            DateAdded = new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(7603),
                             Description = "",
                             DirectorID = 11,
                             DirectorName = "Joe Johnston",
@@ -1038,7 +1086,7 @@ namespace Moviesite.Data.Migrations
                             Id = 2,
                             ActorNames = "Brie Larson, Samuel L. Jackson, Clark Gregg",
                             Country = "USA",
-                            DateAdded = new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(4998),
+                            DateAdded = new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4441),
                             Description = "",
                             DirectorID = 4,
                             DirectorName = "Anna Boden",
@@ -1063,7 +1111,7 @@ namespace Moviesite.Data.Migrations
                             Id = 3,
                             ActorNames = "Robert Downey Jr., Gwyneth Paltrow, Jon Favreau, Samuel L. Jackson, Jeff Bridges, Terrence Howard, Paul Bettany, Clark Gregg",
                             Country = "USA",
-                            DateAdded = new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5212),
+                            DateAdded = new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4586),
                             Description = "",
                             DirectorID = 5,
                             DirectorName = "Jon Favreau",
@@ -1088,7 +1136,7 @@ namespace Moviesite.Data.Migrations
                             Id = 4,
                             ActorNames = "Robert Downey Jr., Gwyneth Paltrow, Jon Favreau, Samuel L. Jackson, Don Cheadle, Paul Bettany, Clark Gregg, Mickey Rourke",
                             Country = "USA",
-                            DateAdded = new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5363),
+                            DateAdded = new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4593),
                             Description = "",
                             DirectorID = 5,
                             DirectorName = "Jon Favreau",
@@ -1113,7 +1161,7 @@ namespace Moviesite.Data.Migrations
                             Id = 5,
                             ActorNames = "Edward Norton, Tim Roth",
                             Country = "USA",
-                            DateAdded = new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5370),
+                            DateAdded = new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4597),
                             Description = "",
                             DirectorID = 7,
                             DirectorName = "Louis Leterrier",
@@ -1138,7 +1186,7 @@ namespace Moviesite.Data.Migrations
                             Id = 6,
                             ActorNames = "Chris Hemsworth, Natalie Portman, Jaimie Alexander, Idris Elba, Anthony Hopkins, Kat Dennings, Rene Russo, Ray Stevenson, Stellan Skarsgard, Tadanobu Asano, Clark Gregg , Samuel L. Jackson, Jeremy Lee Renner, Tom Hiddleston",
                             Country = "USA",
-                            DateAdded = new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5376),
+                            DateAdded = new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4602),
                             Description = "",
                             DirectorID = 17,
                             DirectorName = "Kenneth Branagh",
@@ -1163,7 +1211,7 @@ namespace Moviesite.Data.Migrations
                             Id = 7,
                             ActorNames = "Chris Hemsworth, Mark Ruffalo, Robert Downey Jr., Jeremy Lee Renner, Tom Hiddleston, Chris Evans, Elizabeth Olsen, Paul Bettany, Scarlet Johansson, Samuel L. Jackson",
                             Country = "USA",
-                            DateAdded = new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5382),
+                            DateAdded = new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4652),
                             Description = "",
                             DirectorID = 2,
                             DirectorName = "Joe Russo",
@@ -1188,7 +1236,7 @@ namespace Moviesite.Data.Migrations
                             Id = 8,
                             ActorNames = "Robert Downey Jr., Gwyneth Paltrow, Jon Favreau, Samuel L. Jackson, Don Cheadle, Paul Bettany, Clark Gregg",
                             Country = "USA",
-                            DateAdded = new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5388),
+                            DateAdded = new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4658),
                             Description = "",
                             DirectorID = 6,
                             DirectorName = "Shane Black",
@@ -1213,7 +1261,7 @@ namespace Moviesite.Data.Migrations
                             Id = 9,
                             ActorNames = "Chris Hemsworth, Natalie Portman, Jaimie Alexander, Idris Elba, Anthony Hopkins, Kat Dennings, Rene Russo, Ray Stevenson, Stellan Skarsgard, Tadanobu Asano, Tom Hiddleston",
                             Country = "USA",
-                            DateAdded = new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5393),
+                            DateAdded = new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4662),
                             Description = "",
                             DirectorID = 9,
                             DirectorName = "Alan Taylor",
@@ -1238,7 +1286,7 @@ namespace Moviesite.Data.Migrations
                             Id = 10,
                             ActorNames = "Chris Evans, Samuel L. Jackson, Hayley Atwell, Sebastian Bach, Anthony Mackie",
                             Country = "USA",
-                            DateAdded = new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5398),
+                            DateAdded = new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4669),
                             Description = "",
                             DirectorID = 3,
                             DirectorName = "Anthony Russo",
@@ -1263,7 +1311,7 @@ namespace Moviesite.Data.Migrations
                             Id = 11,
                             ActorNames = "Chris Pratt, Zoe Saldana, Vin Diesel, Bradley Cooper, Karen Gillan, Dave Bautista",
                             Country = "USA",
-                            DateAdded = new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5404),
+                            DateAdded = new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4673),
                             Description = "",
                             DirectorID = 12,
                             DirectorName = "James Gunn",
@@ -1288,7 +1336,7 @@ namespace Moviesite.Data.Migrations
                             Id = 12,
                             ActorNames = "Chris Pratt, Zoe Saldana, Vin Diesel, Bradley Cooper, Karen Gillan, Dave Bautista, Kurt Russel",
                             Country = "USA",
-                            DateAdded = new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5409),
+                            DateAdded = new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4677),
                             Description = "",
                             DirectorID = 12,
                             DirectorName = "James Gunn",
@@ -1313,7 +1361,7 @@ namespace Moviesite.Data.Migrations
                             Id = 13,
                             ActorNames = "Chris Hemsworth, Mark Ruffalo, Robert Downey Jr., Jeremy Lee Renner, Tom Hiddleston, Chris Evans, Elizabeth Olsen, Paul Bettany, Scarlet Johansson, Samuel L. Jackson",
                             Country = "USA",
-                            DateAdded = new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5415),
+                            DateAdded = new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4682),
                             Description = "",
                             DirectorID = 10,
                             DirectorName = "Joss Whedon",
@@ -1338,7 +1386,7 @@ namespace Moviesite.Data.Migrations
                             Id = 14,
                             ActorNames = "Paul Rudd, Michael Douglas",
                             Country = "USA",
-                            DateAdded = new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5420),
+                            DateAdded = new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4688),
                             Description = "",
                             DirectorID = 13,
                             DirectorName = "Peyton Reed",
@@ -1363,7 +1411,7 @@ namespace Moviesite.Data.Migrations
                             Id = 15,
                             ActorNames = "Chris Evans, Samuel L. Jackson, Robert Downey Jr., Sebastian Bach, Anthony Mackie, Elizabeth Olsen, Scarlet Johansson, Jeremy Lee Renner, Paul Rudd, Tom Holland, Paul Bettany",
                             Country = "USA",
-                            DateAdded = new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5480),
+                            DateAdded = new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4693),
                             Description = "",
                             DirectorID = 2,
                             DirectorName = "Joe Russo",
@@ -1388,7 +1436,7 @@ namespace Moviesite.Data.Migrations
                             Id = 16,
                             ActorNames = "Tom Holland, Robert Downey Jr., Jon Favreau, Zendaya",
                             Country = "USA",
-                            DateAdded = new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5486),
+                            DateAdded = new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4697),
                             Description = "",
                             DirectorID = 14,
                             DirectorName = "Jon Watts",
@@ -1413,7 +1461,7 @@ namespace Moviesite.Data.Migrations
                             Id = 17,
                             ActorNames = "Benedict Cumberbatch",
                             Country = "USA",
-                            DateAdded = new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5492),
+                            DateAdded = new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4702),
                             Description = "",
                             DirectorID = 15,
                             DirectorName = "Scott Derrickson",
@@ -1438,7 +1486,7 @@ namespace Moviesite.Data.Migrations
                             Id = 18,
                             ActorNames = "Chadwick Boseman, Michael B. Jordan",
                             Country = "USA",
-                            DateAdded = new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5497),
+                            DateAdded = new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4706),
                             Description = "",
                             DirectorID = 16,
                             DirectorName = "Ryan Coogler",
@@ -1463,7 +1511,7 @@ namespace Moviesite.Data.Migrations
                             Id = 19,
                             ActorNames = "Chris Hemsworth, Idris Elba, Anthony Hopkins, Ray Stevenson, Tadanobu Asano,Tom Hiddleston",
                             Country = "USA",
-                            DateAdded = new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5502),
+                            DateAdded = new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4710),
                             Description = "",
                             DirectorID = 8,
                             DirectorName = "Taika Waititi",
@@ -1488,7 +1536,7 @@ namespace Moviesite.Data.Migrations
                             Id = 20,
                             ActorNames = "Chris Hemsworth, Mark Ruffalo, Scarlet Johannson, Karen Gillan, Robert Downey Jr., Samuel L. Jackson, Jeremy Lee Renner, Tom Hiddleston, Chris Evans, Brie Larson, Josh Brolin, Chadwick Boseman, Elizabeth Olsen, Chris Pratt, Zoe Saldana, Benedict Cumberbatch, Paul Bettany, Anthony Mackie, Sebastian Bach, Vin Diesel, Tom Holland",
                             Country = "USA",
-                            DateAdded = new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5508),
+                            DateAdded = new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4716),
                             Description = "",
                             DirectorID = 3,
                             DirectorName = "Anthony Russo",
@@ -1513,7 +1561,7 @@ namespace Moviesite.Data.Migrations
                             Id = 21,
                             ActorNames = "Paul Rudd, Evangeline Lilly, Michael Douglas",
                             Country = "USA",
-                            DateAdded = new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5515),
+                            DateAdded = new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4720),
                             Description = "",
                             DirectorID = 13,
                             DirectorName = "Peyton Reed",
@@ -1538,7 +1586,7 @@ namespace Moviesite.Data.Migrations
                             Id = 22,
                             ActorNames = "Chris Hemsworth, Mark Ruffalo, Scarlet Johannson, Karen Gillan, Robert Downey Jr., Samuel L. Jackson, Jeremy Lee Renner, Tom Hiddleston, Chris Evans, Brie Larson, Josh Brolin, Chadwick Boseman, Elizabeth Olsen, Chris Pratt, Zoe Saldana, Benedict Cumberbatch, Paul Bettany, Anthony Mackie, Sebastian Bach, Vin Diesel, Tom Holland",
                             Country = "USA",
-                            DateAdded = new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5520),
+                            DateAdded = new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4725),
                             Description = "",
                             DirectorID = 3,
                             DirectorName = "Anthony Russo",
@@ -1563,7 +1611,7 @@ namespace Moviesite.Data.Migrations
                             Id = 23,
                             ActorNames = "Tom Holland, Jon Favreau, Zendaya, Samuel L. Jackson, Cobie Smulders, Jake Gyllenhaal",
                             Country = "USA",
-                            DateAdded = new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5526),
+                            DateAdded = new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4729),
                             Description = "",
                             DirectorID = 14,
                             DirectorName = "Jon Watts",
@@ -1680,7 +1728,7 @@ namespace Moviesite.Data.Migrations
                         {
                             Id = 1,
                             Country = "USA",
-                            DateBirth = new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(3156),
+                            DateBirth = new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(1827),
                             Gender = "Male",
                             Name = "Kevin Feige",
                             ShortDescription = ""

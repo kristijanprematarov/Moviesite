@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Moviesite.Data.Migrations
 {
-    public partial class initialWithDataSeeded : Migration
+    public partial class initialWithDataSeededPlusUserDataSeeded : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -352,81 +352,96 @@ namespace Moviesite.Data.Migrations
                 columns: new[] { "Id", "Country", "DateBirth", "Gender", "Name" },
                 values: new object[,]
                 {
-                    { 1, "Australia", new DateTime(2021, 4, 17, 19, 28, 2, 682, DateTimeKind.Local).AddTicks(3463), "Male", "Chris Hemsworth" },
-                    { 29, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6942), "Male", "Idris Elba" },
-                    { 30, "Japan", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6946), "Male", "Tadanobu Asano" },
-                    { 31, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6950), "Female", "Kat Dennings" },
-                    { 32, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6953), "Male", "Anthony Hopkins" },
-                    { 33, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6957), "Female", "Jaimie Alexander" },
-                    { 34, "Ireland", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6961), "Male", "Ray Stevenson" },
-                    { 35, "Romania", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6964), "Male", "Sebastian Stan" },
-                    { 36, "England", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6968), "Female", "Hayley Atwell" },
-                    { 37, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6972), "Male", "Tommy Lee Jones" },
-                    { 38, "Canada", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6975), "Female", "Evangeline Lilly" },
-                    { 28, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6938), "Female", "Rene Russo" },
-                    { 39, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6979), "Female", "Chris Pratt" },
-                    { 42, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6990), "Male", "Dave Bautista" },
-                    { 43, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6993), "Male", "Kurt Russell" },
-                    { 44, "England", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6997), "Male", "Tom Holland" },
-                    { 45, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(7001), "Male", "Anthony Mackie" },
-                    { 46, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(7005), "Female", "Elizabeth Olsen" },
-                    { 47, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(7008), "Male", "Paul Rudd" },
-                    { 48, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(7012), "Male", "Benedict Cumberbatch" },
-                    { 49, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(7016), "Male", "Michael B. Jordan" },
-                    { 50, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(7020), "Male", "Chadwick Boseman" },
-                    { 51, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(7023), "Male", "Jake Gyllenhaal" },
-                    { 40, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6982), "Female", "Zoe Saldana" },
-                    { 27, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6934), "Female", "Natalie Portman" },
-                    { 41, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6986), "Male", "Vin Diesel" },
-                    { 25, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6886), "Male", "Liv Tyler" },
-                    { 26, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6931), "Male", "Mickey Rourke" },
-                    { 2, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6720), "Male", "Robert Downey Jr." },
-                    { 3, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6794), "Male", "Chris Evans" },
-                    { 4, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6802), "Female", "Scarlett Johansson" },
-                    { 5, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6807), "Male", "Mark Ruffalo" },
-                    { 6, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6811), "Male", "Jeremy Lee Renner" },
-                    { 7, "England", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6817), "Male", "Tom Hiddleston" },
-                    { 8, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6821), "Male", "Robert Clark Gregg" },
-                    { 9, "Canada", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6825), "Female", "Cobie Smulders" },
-                    { 11, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6832), "Male", "Samuel L. Jackson" },
-                    { 12, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6836), "Female", "Karen Gillan" },
-                    { 10, "Sweden", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6829), "Male", "Stellan John Skarsgard" },
-                    { 14, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6843), "Male", "Jon Favreau" },
-                    { 24, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6882), "Male", "Tim Roth" },
-                    { 23, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6879), "Male", "Edward Norton" },
-                    { 22, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6874), "Male", "Don Cheadle" },
-                    { 13, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6840), "Female", "Brie Larson" },
-                    { 20, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6865), "Male", "Terrence Howard" },
-                    { 19, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6862), "Female", "Gwyneth Paltrow" },
-                    { 21, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6869), "Male", "Jeff Bridges" },
-                    { 17, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6854), "Male", "Clark Gregg" },
-                    { 16, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6851), "Male", "Josh Brolin" },
-                    { 15, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6847), "Male", "Bradley Cooper" },
-                    { 18, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 686, DateTimeKind.Local).AddTicks(6858), "Male", "Paul Bettany" }
+                    { 39, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7963), "Female", "Chris Pratt" },
+                    { 24, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7874), "Male", "Tim Roth" },
+                    { 25, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7877), "Male", "Liv Tyler" },
+                    { 26, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7880), "Male", "Mickey Rourke" },
+                    { 27, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7883), "Female", "Natalie Portman" },
+                    { 28, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7929), "Female", "Rene Russo" },
+                    { 29, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7933), "Male", "Idris Elba" },
+                    { 30, "Japan", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7936), "Male", "Tadanobu Asano" },
+                    { 31, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7939), "Female", "Kat Dennings" },
+                    { 32, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7942), "Male", "Anthony Hopkins" },
+                    { 33, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7945), "Female", "Jaimie Alexander" },
+                    { 23, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7872), "Male", "Edward Norton" },
+                    { 34, "Ireland", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7948), "Male", "Ray Stevenson" },
+                    { 36, "England", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7953), "Female", "Hayley Atwell" },
+                    { 37, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7956), "Male", "Tommy Lee Jones" },
+                    { 38, "Canada", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7960), "Female", "Evangeline Lilly" },
+                    { 48, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7992), "Male", "Benedict Cumberbatch" },
+                    { 40, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7967), "Female", "Zoe Saldana" },
+                    { 41, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7970), "Male", "Vin Diesel" },
+                    { 42, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7973), "Male", "Dave Bautista" },
+                    { 43, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7976), "Male", "Kurt Russell" },
+                    { 44, "England", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7979), "Male", "Tom Holland" },
+                    { 45, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7982), "Male", "Anthony Mackie" },
+                    { 35, "Romania", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7951), "Male", "Sebastian Stan" },
+                    { 46, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7986), "Female", "Elizabeth Olsen" },
+                    { 22, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7869), "Male", "Don Cheadle" },
+                    { 20, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7862), "Male", "Terrence Howard" },
+                    { 51, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(8002), "Male", "Jake Gyllenhaal" },
+                    { 50, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7999), "Male", "Chadwick Boseman" },
+                    { 49, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7995), "Male", "Michael B. Jordan" },
+                    { 1, "Australia", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(6845), "Male", "Chris Hemsworth" },
+                    { 2, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7785), "Male", "Robert Downey Jr." },
+                    { 3, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7811), "Male", "Chris Evans" },
+                    { 4, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7815), "Female", "Scarlett Johansson" },
+                    { 5, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7818), "Male", "Mark Ruffalo" },
+                    { 6, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7821), "Male", "Jeremy Lee Renner" },
+                    { 7, "England", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7824), "Male", "Tom Hiddleston" },
+                    { 21, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7865), "Male", "Jeff Bridges" },
+                    { 8, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7827), "Male", "Robert Clark Gregg" },
+                    { 10, "Sweden", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7833), "Male", "Stellan John Skarsgard" },
+                    { 11, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7836), "Male", "Samuel L. Jackson" },
+                    { 12, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7839), "Female", "Karen Gillan" },
+                    { 13, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7842), "Female", "Brie Larson" },
+                    { 14, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7845), "Male", "Jon Favreau" },
+                    { 15, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7848), "Male", "Bradley Cooper" },
+                    { 16, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7851), "Male", "Josh Brolin" },
+                    { 17, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7853), "Male", "Clark Gregg" },
+                    { 18, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7857), "Male", "Paul Bettany" },
+                    { 19, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7860), "Female", "Gwyneth Paltrow" },
+                    { 9, "Canada", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7830), "Female", "Cobie Smulders" },
+                    { 47, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 353, DateTimeKind.Local).AddTicks(7989), "Male", "Paul Rudd" }
                 });
+
+            migrationBuilder.InsertData(
+                table: "AspNetRoles",
+                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
+                values: new object[,]
+                {
+                    { "b4280b6a-0613-4cbd-a9e6-f1701e926e73", "7e8db2f6-45a5-44c7-9c4c-fa62f61b5520", "admin", "ADMIN" },
+                    { "b4280b6a-0613-4cbd-a9e6-f1701e926e75", "57f0790b-699d-4595-a6ac-26c5c6b3bf64", "guest", "GUEST" },
+                    { "b4280b6a-0613-4cbd-a9e6-f1701e926e74", "e677f74b-1faf-49d8-b4b1-21ce79b1a377", "editor", "EDITOR" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "AspNetUsers",
+                columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
+                values: new object[] { "b4280b6a-0613-4cbd-a9e6-f1701e926e73", 0, "c8554266-b401-4591-9aeb-a9283053fc58", "admin@moviesite.com", true, false, null, "ADMIN@MOVIESITE.COM", "ADMIN@MOVIESITE.COM", "AQAAAAEAACcQAAAAEPQxiVTwOiFCKaDAhPb1/1rS61Xe3VxGqIcHKIHR4NjaBinacv3buRCvTh5UC3qb2Q==", null, false, "", false, "admin@moviesite.com" });
 
             migrationBuilder.InsertData(
                 table: "Directors",
                 columns: new[] { "Id", "Country", "DateBirth", "Gender", "Name", "ShortDescription" },
                 values: new object[,]
                 {
-                    { 11, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9295), "Male", "Joe Johnston", "" },
-                    { 16, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9519), "Male", "Ryan Coogler", "" },
-                    { 15, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9514), "Male", "Scott Derrickson", "" },
-                    { 17, "Ireland", new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9524), "Male", "Kenneth Branagh", "" },
-                    { 14, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9509), "Male", "Jon Watts", "" },
-                    { 13, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9504), "Male", "Peyton Reed", "" },
-                    { 12, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9299), "Male", "James Gunn", "" },
-                    { 10, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9290), "Male", "Joss Whedon", "" },
-                    { 3, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9257), "Male", "Anthony Russo", "" },
-                    { 8, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9282), "Male", "Taika Waititi", "" },
-                    { 7, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9277), "Male", "Louis Leterrier", "" },
-                    { 6, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9273), "Male", "Shane Black", "" },
-                    { 5, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9269), "Male", "Jon Favreau", "" },
-                    { 4, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9263), "Female", "Anna Boden", "" },
-                    { 2, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9193), "Male", "Joe Russo", "" },
-                    { 1, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(7892), "Male", "Kevin Feige", "" },
-                    { 9, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(9286), "Male", "Alan Taylor", "" }
+                    { 17, "Ireland", new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5828), "Male", "Kenneth Branagh", "" },
+                    { 16, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5825), "Male", "Ryan Coogler", "" },
+                    { 15, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5822), "Male", "Scott Derrickson", "" },
+                    { 13, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5816), "Male", "Peyton Reed", "" },
+                    { 12, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5813), "Male", "James Gunn", "" },
+                    { 11, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5810), "Male", "Joe Johnston", "" },
+                    { 10, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5807), "Male", "Joss Whedon", "" },
+                    { 9, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5804), "Male", "Alan Taylor", "" },
+                    { 14, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5819), "Male", "Jon Watts", "" },
+                    { 7, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5798), "Male", "Louis Leterrier", "" },
+                    { 6, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5795), "Male", "Shane Black", "" },
+                    { 5, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5792), "Male", "Jon Favreau", "" },
+                    { 4, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5789), "Female", "Anna Boden", "" },
+                    { 3, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5785), "Male", "Anthony Russo", "" },
+                    { 2, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5761), "Male", "Joe Russo", "" },
+                    { 1, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(4875), "Male", "Kevin Feige", "" },
+                    { 8, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(5801), "Male", "Taika Waititi", "" }
                 });
 
             migrationBuilder.InsertData(
@@ -451,36 +466,41 @@ namespace Moviesite.Data.Migrations
             migrationBuilder.InsertData(
                 table: "Producers",
                 columns: new[] { "Id", "Country", "DateBirth", "Gender", "Name", "ShortDescription" },
-                values: new object[] { 1, "USA", new DateTime(2021, 4, 17, 19, 28, 2, 689, DateTimeKind.Local).AddTicks(3156), "Male", "Kevin Feige", "" });
+                values: new object[] { 1, "USA", new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(1827), "Male", "Kevin Feige", "" });
+
+            migrationBuilder.InsertData(
+                table: "AspNetUserRoles",
+                columns: new[] { "UserId", "RoleId" },
+                values: new object[] { "b4280b6a-0613-4cbd-a9e6-f1701e926e73", "b4280b6a-0613-4cbd-a9e6-f1701e926e73" });
 
             migrationBuilder.InsertData(
                 table: "Movies",
                 columns: new[] { "Id", "ActorNames", "Country", "DateAdded", "Description", "DirectorID", "DirectorName", "Duration", "FormatType", "GenreID", "GenreName", "Language", "PhotoURL", "Price", "ProducerID", "ProducerName", "Rating", "ReleaseDate", "Shipping", "SoldItems", "Title", "UserId" },
                 values: new object[,]
                 {
-                    { 1, "Chris Evans, Samuel L. Jackson, Hayley Atwell, Sebastian Bach", "USA", new DateTime(2021, 4, 17, 19, 28, 2, 690, DateTimeKind.Local).AddTicks(2549), "", 11, "Joe Johnston", "", "", 11, "Sci-Fi", "English", "CaptainAmerica.jpg", 12.0, 1, "Kevin Feige", 5.0, new DateTime(2019, 1, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 33, "Captain America: The First Avenger", 0 },
-                    { 21, "Paul Rudd, Evangeline Lilly, Michael Douglas", "USA", new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5515), "", 13, "Peyton Reed", "", "", 11, "Sci-Fi", "English", "AntManAndTheWasp.jpg", 14.0, 1, "Kevin Feige", 4.5, new DateTime(2020, 6, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 20, "Ant-Man and The Wasp", 0 },
-                    { 20, "Chris Hemsworth, Mark Ruffalo, Scarlet Johannson, Karen Gillan, Robert Downey Jr., Samuel L. Jackson, Jeremy Lee Renner, Tom Hiddleston, Chris Evans, Brie Larson, Josh Brolin, Chadwick Boseman, Elizabeth Olsen, Chris Pratt, Zoe Saldana, Benedict Cumberbatch, Paul Bettany, Anthony Mackie, Sebastian Bach, Vin Diesel, Tom Holland", "USA", new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5508), "", 3, "Anthony Russo", "", "", 11, "Sci-Fi", "English", "AvengersInfinityWar.jpg", 22.0, 1, "Kevin Feige", 5.0, new DateTime(2020, 5, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 80, "Avengers: Infinity War", 0 },
-                    { 19, "Chris Hemsworth, Idris Elba, Anthony Hopkins, Ray Stevenson, Tadanobu Asano,Tom Hiddleston", "USA", new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5502), "", 8, "Taika Waititi", "", "", 11, "Sci-Fi", "English", "ThorRagnarok.jpg", 17.0, 1, "Kevin Feige", 5.0, new DateTime(2019, 4, 23, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 30, "Thor: Ragnarok", 0 },
-                    { 18, "Chadwick Boseman, Michael B. Jordan", "USA", new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5497), "", 16, "Ryan Coogler", "", "", 11, "Sci-Fi", "English", "BlackPanther.jpg", 16.0, 1, "Kevin Feige", 4.4000000000000004, new DateTime(2019, 4, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 32, "Black Panther", 0 },
-                    { 17, "Benedict Cumberbatch", "USA", new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5492), "", 15, "Scott Derrickson", "", "", 11, "Sci-Fi", "English", "DrStrange.jpg", 16.0, 1, "Kevin Feige", 4.2999999999999998, new DateTime(2019, 6, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 34, "Doctor Strange", 0 },
-                    { 16, "Tom Holland, Robert Downey Jr., Jon Favreau, Zendaya", "USA", new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5486), "", 14, "Jon Watts", "", "", 11, "Sci-Fi", "English", "SpidermanHomecoming.jpg", 15.0, 1, "Kevin Feige", 5.0, new DateTime(2019, 7, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 43, "Spider-Man: Homecoming", 0 },
-                    { 15, "Chris Evans, Samuel L. Jackson, Robert Downey Jr., Sebastian Bach, Anthony Mackie, Elizabeth Olsen, Scarlet Johansson, Jeremy Lee Renner, Paul Rudd, Tom Holland, Paul Bettany", "USA", new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5480), "", 2, "Joe Russo", "", "", 11, "Sci-Fi", "English", "CaptainAmericaCivilWar.jpg", 16.0, 1, "Kevin Feige", 4.5, new DateTime(2019, 2, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 44, "Captain America: Civil War", 0 },
-                    { 14, "Paul Rudd, Michael Douglas", "USA", new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5420), "", 13, "Peyton Reed", "", "", 11, "Sci-Fi", "English", "AntMan.jpg", 15.0, 1, "Kevin Feige", 4.5, new DateTime(2019, 7, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 30, "Ant-Man", 0 },
-                    { 13, "Chris Hemsworth, Mark Ruffalo, Robert Downey Jr., Jeremy Lee Renner, Tom Hiddleston, Chris Evans, Elizabeth Olsen, Paul Bettany, Scarlet Johansson, Samuel L. Jackson", "USA", new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5415), "", 10, "Joss Whedon", "", "", 11, "Sci-Fi", "English", "AvengersAgeOfUltron.jpg", 18.0, 1, "Kevin Feige", 5.0, new DateTime(2019, 4, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 45, "Avengers: Age of Ultron", 0 },
-                    { 22, "Chris Hemsworth, Mark Ruffalo, Scarlet Johannson, Karen Gillan, Robert Downey Jr., Samuel L. Jackson, Jeremy Lee Renner, Tom Hiddleston, Chris Evans, Brie Larson, Josh Brolin, Chadwick Boseman, Elizabeth Olsen, Chris Pratt, Zoe Saldana, Benedict Cumberbatch, Paul Bettany, Anthony Mackie, Sebastian Bach, Vin Diesel, Tom Holland", "USA", new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5520), "", 3, "Anthony Russo", "", "", 11, "Sci-Fi", "English", "AvengersEndGame.jpg", 20.0, 1, "Kevin Feige", 5.0, new DateTime(2020, 6, 15, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 23, "Avengers: Endgame", 0 },
-                    { 12, "Chris Pratt, Zoe Saldana, Vin Diesel, Bradley Cooper, Karen Gillan, Dave Bautista, Kurt Russel", "USA", new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5409), "", 12, "James Gunn", "", "", 11, "Sci-Fi", "English", "GuardiansOfTheGalaxyVol2.jpg", 15.0, 1, "Kevin Feige", 5.0, new DateTime(2018, 3, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 14, "Guardians of the Galaxy Vol.2", 0 },
-                    { 10, "Chris Evans, Samuel L. Jackson, Hayley Atwell, Sebastian Bach, Anthony Mackie", "USA", new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5398), "", 3, "Anthony Russo", "", "", 11, "Sci-Fi", "English", "CaptainAmericaWinterSoldier.jpg", 16.0, 1, "Kevin Feige", 5.0, new DateTime(2019, 3, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 50, "Captain America: Winter Soldier", 0 },
-                    { 9, "Chris Hemsworth, Natalie Portman, Jaimie Alexander, Idris Elba, Anthony Hopkins, Kat Dennings, Rene Russo, Ray Stevenson, Stellan Skarsgard, Tadanobu Asano, Tom Hiddleston", "USA", new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5393), "", 9, "Alan Taylor", "", "", 11, "Sci-Fi", "English", "ThorTheDarkWorld.jpg", 16.0, 1, "Kevin Feige", 5.0, new DateTime(2018, 1, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 50, "Thor: The Dark World", 0 },
-                    { 8, "Robert Downey Jr., Gwyneth Paltrow, Jon Favreau, Samuel L. Jackson, Don Cheadle, Paul Bettany, Clark Gregg", "USA", new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5388), "", 6, "Shane Black", "", "", 11, "Sci-Fi", "English", "IronMan3.jpg", 16.0, 1, "Kevin Feige", 5.0, new DateTime(2019, 8, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 34, "Iron Man 3", 0 },
-                    { 7, "Chris Hemsworth, Mark Ruffalo, Robert Downey Jr., Jeremy Lee Renner, Tom Hiddleston, Chris Evans, Elizabeth Olsen, Paul Bettany, Scarlet Johansson, Samuel L. Jackson", "USA", new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5382), "", 2, "Joe Russo", "", "", 11, "Sci-Fi", "English", "Avengers.jpg", 15.0, 1, "Kevin Feige", 5.0, new DateTime(2019, 7, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 33, "The Avengers", 0 },
-                    { 6, "Chris Hemsworth, Natalie Portman, Jaimie Alexander, Idris Elba, Anthony Hopkins, Kat Dennings, Rene Russo, Ray Stevenson, Stellan Skarsgard, Tadanobu Asano, Clark Gregg , Samuel L. Jackson, Jeremy Lee Renner, Tom Hiddleston", "USA", new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5376), "", 17, "Kenneth Branagh", "", "", 11, "Sci-Fi", "English", "Thor.jpg", 15.0, 1, "Kevin Feige", 5.0, new DateTime(2019, 6, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 12, "Thor", 0 },
-                    { 5, "Edward Norton, Tim Roth", "USA", new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5370), "", 7, "Louis Leterrier", "", "", 11, "Sci-Fi", "English", "TheIncredibleHulk.jpg", 16.0, 1, "Kevin Feige", 5.0, new DateTime(2019, 5, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 13, "The Incredible Hulk", 0 },
-                    { 4, "Robert Downey Jr., Gwyneth Paltrow, Jon Favreau, Samuel L. Jackson, Don Cheadle, Paul Bettany, Clark Gregg, Mickey Rourke", "USA", new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5363), "", 5, "Jon Favreau", "", "", 11, "Sci-Fi", "English", "IronMan2.jpg", 22.0, 1, "Kevin Feige", 5.0, new DateTime(2019, 4, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 50, "Iron Man 2", 0 },
-                    { 3, "Robert Downey Jr., Gwyneth Paltrow, Jon Favreau, Samuel L. Jackson, Jeff Bridges, Terrence Howard, Paul Bettany, Clark Gregg", "USA", new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5212), "", 5, "Jon Favreau", "", "", 11, "Sci-Fi", "English", "IronMan.jpg", 11.0, 1, "Kevin Feige", 5.0, new DateTime(2019, 3, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 32, "Iron Man", 0 },
-                    { 2, "Brie Larson, Samuel L. Jackson, Clark Gregg", "USA", new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(4998), "", 4, "Anna Boden", "", "", 11, "Sci-Fi", "English", "CaptainMarvel.jpg", 15.0, 1, "Kevin Feige", 5.0, new DateTime(2019, 2, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 12, "Captain Marvel", 0 },
-                    { 11, "Chris Pratt, Zoe Saldana, Vin Diesel, Bradley Cooper, Karen Gillan, Dave Bautista", "USA", new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5404), "", 12, "James Gunn", "", "", 11, "Sci-Fi", "English", "GuardiansOfTheGalaxy.jpg", 14.0, 1, "Kevin Feige", 5.0, new DateTime(2018, 4, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 34, "Guardians of the Galaxy", 0 },
-                    { 23, "Tom Holland, Jon Favreau, Zendaya, Samuel L. Jackson, Cobie Smulders, Jake Gyllenhaal", "USA", new DateTime(2021, 4, 17, 19, 28, 2, 691, DateTimeKind.Local).AddTicks(5526), "", 14, "Jon Watts", "", "", 11, "Sci-Fi", "English", "SpidermanFarFromHome.jpg", 12.0, 1, "Kevin Feige", 5.0, new DateTime(2020, 7, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 10, "Spider-Man: Far From Home", 0 }
+                    { 21, "Paul Rudd, Evangeline Lilly, Michael Douglas", "USA", new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4720), "", 13, "Peyton Reed", "", "", 11, "Sci-Fi", "English", "AntManAndTheWasp.jpg", 14.0, 1, "Kevin Feige", 4.5, new DateTime(2020, 6, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 20, "Ant-Man and The Wasp", 0 },
+                    { 20, "Chris Hemsworth, Mark Ruffalo, Scarlet Johannson, Karen Gillan, Robert Downey Jr., Samuel L. Jackson, Jeremy Lee Renner, Tom Hiddleston, Chris Evans, Brie Larson, Josh Brolin, Chadwick Boseman, Elizabeth Olsen, Chris Pratt, Zoe Saldana, Benedict Cumberbatch, Paul Bettany, Anthony Mackie, Sebastian Bach, Vin Diesel, Tom Holland", "USA", new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4716), "", 3, "Anthony Russo", "", "", 11, "Sci-Fi", "English", "AvengersInfinityWar.jpg", 22.0, 1, "Kevin Feige", 5.0, new DateTime(2020, 5, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 80, "Avengers: Infinity War", 0 },
+                    { 19, "Chris Hemsworth, Idris Elba, Anthony Hopkins, Ray Stevenson, Tadanobu Asano,Tom Hiddleston", "USA", new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4710), "", 8, "Taika Waititi", "", "", 11, "Sci-Fi", "English", "ThorRagnarok.jpg", 17.0, 1, "Kevin Feige", 5.0, new DateTime(2019, 4, 23, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 30, "Thor: Ragnarok", 0 },
+                    { 18, "Chadwick Boseman, Michael B. Jordan", "USA", new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4706), "", 16, "Ryan Coogler", "", "", 11, "Sci-Fi", "English", "BlackPanther.jpg", 16.0, 1, "Kevin Feige", 4.4000000000000004, new DateTime(2019, 4, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 32, "Black Panther", 0 },
+                    { 17, "Benedict Cumberbatch", "USA", new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4702), "", 15, "Scott Derrickson", "", "", 11, "Sci-Fi", "English", "DrStrange.jpg", 16.0, 1, "Kevin Feige", 4.2999999999999998, new DateTime(2019, 6, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 34, "Doctor Strange", 0 },
+                    { 16, "Tom Holland, Robert Downey Jr., Jon Favreau, Zendaya", "USA", new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4697), "", 14, "Jon Watts", "", "", 11, "Sci-Fi", "English", "SpidermanHomecoming.jpg", 15.0, 1, "Kevin Feige", 5.0, new DateTime(2019, 7, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 43, "Spider-Man: Homecoming", 0 },
+                    { 15, "Chris Evans, Samuel L. Jackson, Robert Downey Jr., Sebastian Bach, Anthony Mackie, Elizabeth Olsen, Scarlet Johansson, Jeremy Lee Renner, Paul Rudd, Tom Holland, Paul Bettany", "USA", new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4693), "", 2, "Joe Russo", "", "", 11, "Sci-Fi", "English", "CaptainAmericaCivilWar.jpg", 16.0, 1, "Kevin Feige", 4.5, new DateTime(2019, 2, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 44, "Captain America: Civil War", 0 },
+                    { 14, "Paul Rudd, Michael Douglas", "USA", new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4688), "", 13, "Peyton Reed", "", "", 11, "Sci-Fi", "English", "AntMan.jpg", 15.0, 1, "Kevin Feige", 4.5, new DateTime(2019, 7, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 30, "Ant-Man", 0 },
+                    { 13, "Chris Hemsworth, Mark Ruffalo, Robert Downey Jr., Jeremy Lee Renner, Tom Hiddleston, Chris Evans, Elizabeth Olsen, Paul Bettany, Scarlet Johansson, Samuel L. Jackson", "USA", new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4682), "", 10, "Joss Whedon", "", "", 11, "Sci-Fi", "English", "AvengersAgeOfUltron.jpg", 18.0, 1, "Kevin Feige", 5.0, new DateTime(2019, 4, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 45, "Avengers: Age of Ultron", 0 },
+                    { 12, "Chris Pratt, Zoe Saldana, Vin Diesel, Bradley Cooper, Karen Gillan, Dave Bautista, Kurt Russel", "USA", new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4677), "", 12, "James Gunn", "", "", 11, "Sci-Fi", "English", "GuardiansOfTheGalaxyVol2.jpg", 15.0, 1, "Kevin Feige", 5.0, new DateTime(2018, 3, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 14, "Guardians of the Galaxy Vol.2", 0 },
+                    { 11, "Chris Pratt, Zoe Saldana, Vin Diesel, Bradley Cooper, Karen Gillan, Dave Bautista", "USA", new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4673), "", 12, "James Gunn", "", "", 11, "Sci-Fi", "English", "GuardiansOfTheGalaxy.jpg", 14.0, 1, "Kevin Feige", 5.0, new DateTime(2018, 4, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 34, "Guardians of the Galaxy", 0 },
+                    { 10, "Chris Evans, Samuel L. Jackson, Hayley Atwell, Sebastian Bach, Anthony Mackie", "USA", new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4669), "", 3, "Anthony Russo", "", "", 11, "Sci-Fi", "English", "CaptainAmericaWinterSoldier.jpg", 16.0, 1, "Kevin Feige", 5.0, new DateTime(2019, 3, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 50, "Captain America: Winter Soldier", 0 },
+                    { 9, "Chris Hemsworth, Natalie Portman, Jaimie Alexander, Idris Elba, Anthony Hopkins, Kat Dennings, Rene Russo, Ray Stevenson, Stellan Skarsgard, Tadanobu Asano, Tom Hiddleston", "USA", new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4662), "", 9, "Alan Taylor", "", "", 11, "Sci-Fi", "English", "ThorTheDarkWorld.jpg", 16.0, 1, "Kevin Feige", 5.0, new DateTime(2018, 1, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 50, "Thor: The Dark World", 0 },
+                    { 8, "Robert Downey Jr., Gwyneth Paltrow, Jon Favreau, Samuel L. Jackson, Don Cheadle, Paul Bettany, Clark Gregg", "USA", new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4658), "", 6, "Shane Black", "", "", 11, "Sci-Fi", "English", "IronMan3.jpg", 16.0, 1, "Kevin Feige", 5.0, new DateTime(2019, 8, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 34, "Iron Man 3", 0 },
+                    { 7, "Chris Hemsworth, Mark Ruffalo, Robert Downey Jr., Jeremy Lee Renner, Tom Hiddleston, Chris Evans, Elizabeth Olsen, Paul Bettany, Scarlet Johansson, Samuel L. Jackson", "USA", new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4652), "", 2, "Joe Russo", "", "", 11, "Sci-Fi", "English", "Avengers.jpg", 15.0, 1, "Kevin Feige", 5.0, new DateTime(2019, 7, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 33, "The Avengers", 0 },
+                    { 6, "Chris Hemsworth, Natalie Portman, Jaimie Alexander, Idris Elba, Anthony Hopkins, Kat Dennings, Rene Russo, Ray Stevenson, Stellan Skarsgard, Tadanobu Asano, Clark Gregg , Samuel L. Jackson, Jeremy Lee Renner, Tom Hiddleston", "USA", new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4602), "", 17, "Kenneth Branagh", "", "", 11, "Sci-Fi", "English", "Thor.jpg", 15.0, 1, "Kevin Feige", 5.0, new DateTime(2019, 6, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 12, "Thor", 0 },
+                    { 5, "Edward Norton, Tim Roth", "USA", new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4597), "", 7, "Louis Leterrier", "", "", 11, "Sci-Fi", "English", "TheIncredibleHulk.jpg", 16.0, 1, "Kevin Feige", 5.0, new DateTime(2019, 5, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 13, "The Incredible Hulk", 0 },
+                    { 4, "Robert Downey Jr., Gwyneth Paltrow, Jon Favreau, Samuel L. Jackson, Don Cheadle, Paul Bettany, Clark Gregg, Mickey Rourke", "USA", new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4593), "", 5, "Jon Favreau", "", "", 11, "Sci-Fi", "English", "IronMan2.jpg", 22.0, 1, "Kevin Feige", 5.0, new DateTime(2019, 4, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 50, "Iron Man 2", 0 },
+                    { 3, "Robert Downey Jr., Gwyneth Paltrow, Jon Favreau, Samuel L. Jackson, Jeff Bridges, Terrence Howard, Paul Bettany, Clark Gregg", "USA", new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4586), "", 5, "Jon Favreau", "", "", 11, "Sci-Fi", "English", "IronMan.jpg", 11.0, 1, "Kevin Feige", 5.0, new DateTime(2019, 3, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 32, "Iron Man", 0 },
+                    { 2, "Brie Larson, Samuel L. Jackson, Clark Gregg", "USA", new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4441), "", 4, "Anna Boden", "", "", 11, "Sci-Fi", "English", "CaptainMarvel.jpg", 15.0, 1, "Kevin Feige", 5.0, new DateTime(2019, 2, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 12, "Captain Marvel", 0 },
+                    { 1, "Chris Evans, Samuel L. Jackson, Hayley Atwell, Sebastian Bach", "USA", new DateTime(2021, 4, 18, 22, 0, 27, 354, DateTimeKind.Local).AddTicks(7603), "", 11, "Joe Johnston", "", "", 11, "Sci-Fi", "English", "CaptainAmerica.jpg", 12.0, 1, "Kevin Feige", 5.0, new DateTime(2019, 1, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 33, "Captain America: The First Avenger", 0 },
+                    { 22, "Chris Hemsworth, Mark Ruffalo, Scarlet Johannson, Karen Gillan, Robert Downey Jr., Samuel L. Jackson, Jeremy Lee Renner, Tom Hiddleston, Chris Evans, Brie Larson, Josh Brolin, Chadwick Boseman, Elizabeth Olsen, Chris Pratt, Zoe Saldana, Benedict Cumberbatch, Paul Bettany, Anthony Mackie, Sebastian Bach, Vin Diesel, Tom Holland", "USA", new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4725), "", 3, "Anthony Russo", "", "", 11, "Sci-Fi", "English", "AvengersEndGame.jpg", 20.0, 1, "Kevin Feige", 5.0, new DateTime(2020, 6, 15, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 23, "Avengers: Endgame", 0 },
+                    { 23, "Tom Holland, Jon Favreau, Zendaya, Samuel L. Jackson, Cobie Smulders, Jake Gyllenhaal", "USA", new DateTime(2021, 4, 18, 22, 0, 27, 355, DateTimeKind.Local).AddTicks(4729), "", 14, "Jon Watts", "", "", 11, "Sci-Fi", "English", "SpidermanFarFromHome.jpg", 12.0, 1, "Kevin Feige", 5.0, new DateTime(2020, 7, 20, 21, 30, 15, 0, DateTimeKind.Unspecified), "Yes", 10, "Spider-Man: Far From Home", 0 }
                 });
 
             migrationBuilder.CreateIndex(

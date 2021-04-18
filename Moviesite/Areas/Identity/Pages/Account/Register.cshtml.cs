@@ -80,6 +80,9 @@ namespace Moviesite.Areas.Identity.Pages.Account
                 {
                     _logger.LogInformation("User created a new account with password.");
 
+                    // *** ADD GUEST ROLE TO NEWLY REGISTERED USERS --> TOJ SO KE SE REGISTRIRA RANDOM STAVI MU GUEST
+                    await _userManager.AddToRoleAsync(user, "guest");
+
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
                     var callbackUrl = Url.Page(
